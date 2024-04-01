@@ -1,29 +1,36 @@
 /** @format */
 
-import NavLinks from "./navlinks";
 import Image from "next/image";
+import NavLinks from "./navlinks";
 
-export default function Navbar() {
+export default function NavbarTwo() {
 	return (
 		<>
-			<div className='w-full h-15 bg-sky-700 sticky top-0'>
-				<div className='container ml-5 h-full'>
-					<div className='flex justify-between h-full'>
+			<div className='w-full h-15 bg-sky-700'>
+				<div className='flex justify-between ml-5 mr-5'>
+					{/* I want this div to be on the left side of the navbar */}
+					<div className='flex items-center'>
+						<Image
+							src='/DeepWeave_logo.png'
+							width={75}
+							height={75}
+							alt='DeepWeave Logo'
+						/>
+						<div className='text-xl text-white ml-2'>DeepWeave</div>
+					</div>
+					{/* I want this div to be on the right side of the navbar */}
+					<div className='hidden md:flex items-center'>
+						<NavLinks />
+					</div>
+					<div className='flex items-center lg:hidden cursor-pointer'>
 						<div className='flex items-center'>
-							<Image
-								src='/DeepWeave_logo.png'
-								width={75}
-								height={75}
-								className='hidden md:block'
-								alt='DeepWeave Logo'
-							/>
-							<h2 className='text-white ml-2 text-xl tracking-widest'>
-								DeepWeave
-							</h2>
+							<button
+								id='hamburger-button'
+								className='text-3xl text-white md:hidden cursor-pointer' // Hidden on lg screens and above
+							>
+								&#9776;
+							</button>
 						</div>
-						<ul className='hidden md:flex gap-x-4 text-white items-center'>
-							<NavLinks />
-						</ul>
 					</div>
 				</div>
 			</div>
