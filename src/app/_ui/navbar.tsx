@@ -1,14 +1,21 @@
 /** @format */
 
+"use client";
 import Image from "next/image";
 import NavLinks from "./navlinks";
+import { useState } from "react";
 
-export default function NavbarTwo() {
+export default function Navbar() {
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+	const toggleDropdown = () => {
+		setIsDropdownOpen(!isDropdownOpen);
+	};
+
 	return (
 		<>
-			<div className='w-full h-15 bg-sky-700'>
-				<div className='flex justify-between ml-5 mr-5'>
-					{/* I want this div to be on the left side of the navbar */}
+			<div className='w-full h-15 sticky bg-sky-700'>
+				<div className='flex justify-between ml-5 mr-5 sm:mr-2'>
 					<div className='flex items-center'>
 						<Image
 							src='/DeepWeave_logo.png'
@@ -18,7 +25,6 @@ export default function NavbarTwo() {
 						/>
 						<div className='text-xl text-white ml-2'>DeepWeave</div>
 					</div>
-					{/* I want this div to be on the right side of the navbar */}
 					<div className='hidden md:flex items-center'>
 						<NavLinks />
 					</div>
@@ -26,11 +32,17 @@ export default function NavbarTwo() {
 						<div className='flex items-center'>
 							<button
 								id='hamburger-button'
-								className='text-3xl text-white md:hidden cursor-pointer' // Hidden on lg screens and above
+								className='text-5xl text-white cursor-pointer md:hidden'
+								onClick={toggleDropdown}
 							>
 								&#9776;
 							</button>
 						</div>
+						{isDropdownOpen && (
+							<div className='absolute top-15 left-0 right-0  bg-black border border-gray-300 p-2'>
+								<NavLinks />
+							</div>
+						)}
 					</div>
 				</div>
 			</div>
