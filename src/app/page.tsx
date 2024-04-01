@@ -1,7 +1,6 @@
 /** @format */
 
 import Image from "next/image";
-import Navbar from "./_ui/navbar";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
 
