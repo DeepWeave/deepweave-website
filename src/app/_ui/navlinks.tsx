@@ -25,14 +25,11 @@ export default function NavLinks() {
 					<Link
 						key={link.name}
 						href={link.href}
-						className={clsx(
-							"flex h-[48px] grow items-center justify-center gap-2 text-lg font-normal tracking-widest hover:font-bold md:flex md:justify-start md:p-2 md:px-3",
-							{
-								"font-bold": pathname === link.href,
-							}
-						)}
+						className={clsx("text-white", {
+							"font-bold": pathname === link.href,
+						})}
 					>
-						<p className='hidden md:block'>{link.name}</p>
+						<p className='ml-5 mr-5'>{link.name}</p>
 					</Link>
 				);
 			})}

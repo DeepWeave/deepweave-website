@@ -1,5 +1,3 @@
-/** @format */
-
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,6 +10,10 @@ const config: Config = {
 		extend: {
 			fontFamily: {
 				sans: ["Arial", "sans-serif"],
+			},
+			screens: {
+				'widescreen': { raw: "(min-aspect-ratio:3/2" },
+				'tallscreen': { raw: "(min-aspect-ratio:13/20" },
 			},
 		},
 	},
