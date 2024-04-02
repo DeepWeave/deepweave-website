@@ -12,8 +12,8 @@ const config: Config = {
 				sans: ["Arial", "sans-serif"],
 			},
 			screens: {
-				'widescreen': { raw: "(min-aspect-ratio:3/2" },
-				'tallscreen': { raw: "(min-aspect-ratio:13/20" },
+				widescreen: { raw: "(min-aspect-ratio:3/2" },
+				tallscreen: { raw: "(min-aspect-ratio:13/20" },
 			},
 		},
 	},

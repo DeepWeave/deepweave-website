@@ -11,7 +11,7 @@ export default function LinkedLogo_hover() {
 	return (
 		<Link href='https://www.linkedin.com/in/ericjackson/'>
 			<div
-				className='flex justify-center mt-5 mb-5'
+				className='flex items-end mt-5 mb-5'
 				onMouseEnter={onMouseEnter}
 				onMouseLeave={onMouseLeave}
 			>
@@ -31,7 +31,7 @@ export default function LinkedLogo_hover() {
 					/>
 				)}
 
-				<p className='text-stone-600 italic font-semibold tracking-wider ml-2 hover:text-stone-700 md:text-left'>
+				<p className='text-stone-600 italic font-semibold tracking-wider ml-2 hover:text-stone-700'>
 					See LinkedIn
 				</p>
 			</div>
