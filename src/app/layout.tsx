@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./_ui/navbar";
+import Home from "./page";
 
 export const metadata: Metadata = {
 	title: "DeepWeave",
@@ -24,7 +25,7 @@ export default function RootLayout({
 					sizes='<generated>'
 				/>
 			</head>
-			<body>
+			<body className='m-0 p-0'>
 				<Navbar />
 				{children}
 			</body>

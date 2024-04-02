@@ -6,22 +6,20 @@ import LinkedLogo_hover from "../_ui/linkedLogo_hover";
 
 export default function About() {
 	return (
-		<div className='container flex justify-center items-center h-full'>
-			<div className='flex flex-col mt-40 w-2/3 md:flex-row'>
-				{" "}
-				{/* need to adjust size above */}
+		<div className='container flex justify-center items-center h-full  m-auto sm:px-10rem'>
+			<div className='flex flex-col justify-center items-center mt-40 md:flex-row '>
 				<Image
 					src='/Profile_image.jpg'
-					width={375}
-					height={375}
+					width={270}
+					height={270}
 					alt='Picture of the Eric Jackson'
-					className='object-cover h-full'
+					className='object-cover h-full mx-auto md:mx-0 md:w-300px md:h-300px'
 				/>
-				<div className='flex flex-col ml-6'>
-					<h1 className='text-stone-600 text-5xl font-semibold uppercase tracking-wider'>
+				<div className='flex flex-col items-center md:ml-5'>
+					<h1 className='text-stone-600 text-2xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:mt-0'>
 						About Eric Jackson
 					</h1>
-					<p className='text-stone-600 mt-5 text-xl tracking-wider text-left'>
+					<p className='text-stone-600 mt-5 text-base text-center tracking-wider w-3/4 md:text-left md:w-full'>
 						Eric Jackson is a 35-year technology industry veteran who has worked
 						in technical and executive roles in scientific research and
 						computing, enterprise software, and, most recently, municipal

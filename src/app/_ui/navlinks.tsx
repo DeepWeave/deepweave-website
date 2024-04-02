@@ -27,10 +27,10 @@ export default function NavLinks() {
 						key={link.name}
 						href={link.href}
 						className={clsx("text-white", {
-							"font-bold": pathname === link.href,
+							"font-bold text-yellow-400": pathname === link.href,
 						})}
 					>
-						<p className='ml-5 mr-5'>{link.name}</p>
+						<p className='ml-5 mr-5 hover:font-bold'>{link.name}</p>
 					</Link>
 				);
 			})}
