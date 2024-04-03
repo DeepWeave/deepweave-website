@@ -10,6 +10,7 @@ interface ServiceObject {
 	}[];
 	articles: {
 		title: string;
+		href: string;
 		tags: string[];
 	}[];
 }
@@ -57,6 +58,7 @@ export const serviceObjects: ServiceObject[] = [
 		articles: [
 			{
 				title: "Thinking About Performance: Operations vs Strategy",
+				href: "www.google.com",
 				tags: ["Performance", "Strategy"],
 			},
 		],
@@ -93,6 +95,7 @@ export const serviceObjects: ServiceObject[] = [
 		articles: [
 			{
 				title: "What is Data Governance and Why Should I Care?",
+				href: "www.google.com",
 				tags: ["Data Governance"],
 			},
 		],
@@ -115,6 +118,7 @@ export const serviceObjects: ServiceObject[] = [
 		articles: [
 			{
 				title: "Weaving Equity into Grant and Vendor Evaluations",
+				href: "www.google.com",
 				tags: ["Equity"], // Tags made up for the article
 			},
 		],

@@ -1,3 +1,5 @@
+/** @format */
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -14,6 +16,12 @@ const config: Config = {
 			screens: {
 				widescreen: { raw: "(min-aspect-ratio:3/2" },
 				tallscreen: { raw: "(min-aspect-ratio:13/20" },
+			},
+			container: {
+				center: true,
+			},
+			backgroundColor: {
+				"white-opacity-50": "rgba(255, 255, 255, 0.5)",
 			},
 		},
 	},

@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Services() {
 	return (
 		<>
-			<div className='container flex justify-center items-center h-full  m-auto px-10'>
+			<div className='container flex justify-center items-center h-full px-10 mb-10'>
 				<div className='flex flex-col justify-center items-center mt-10 md:mt-40'>
 					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:w-full lg:text-4xl'>
 						Services
@@ -31,8 +31,7 @@ export default function Services() {
 								</div>
 								<div className='bg-sky-700 opacity-70 text-white pt-3 pb-1 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
 									<div>{serviceObject.mainInfo}</div>
-									<Link href={`#{serviceObject.idAttribute}`}>
-										<div>{serviceObject.idAttribute}</div>
+									<Link href={`#${serviceObject.idAttribute}`}>
 										<div className='uppercase underline underline-offset-4'>
 											Learn more
 										</div>
@@ -74,11 +73,15 @@ export default function Services() {
 									<div>
 										{serviceObject.articles.map((article, articleIndex) => (
 											<div key={articleIndex}>
-												<Link href='https:'>
-													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-8 mt-3 hover:text-sky-800 mb-20'>
+												<a
+													href='https://www.google.com'
+													target='_blank'
+													rel='noopener noreferrer'
+												>
+													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-8 mt-3 hover:text-sky-800'>
 														{article.title}
 													</h2>
-												</Link>
+												</a>
 											</div>
 										))}
 									</div>
