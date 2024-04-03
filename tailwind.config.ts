@@ -22,6 +22,8 @@ const config: Config = {
 			},
 			backgroundColor: {
 				"white-opacity-50": "rgba(255, 255, 255, 0.5)",
+				"sky-tint": "#3587b3",
+				"sky-tint-light": "#4e96bd",
 			},
 		},
 	},

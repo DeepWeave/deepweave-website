@@ -16,14 +16,11 @@ export default function Values() {
 				</p>
 				<div className='flex flex-wrap justify-center'>
 					{valuesObjects.map((valueObject, index) => (
-						<div
-							key={index}
-							className='flex flex-col drop-shadow-lg mr-10'
-						>
+						<div key={index} className='flex flex-col drop-shadow-lg md:mr-10'>
 							<div className='bg-sky-700 text-yellow-400 font-semibold mt-10 py-3 pl-3 text-xl h-15 w-80'>
 								{valueObject.value}
 							</div>
-							<div className='bg-sky-700 opacity-70 text-white pt-3 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
+							<div className='bg-sky-tint text-white pt-3 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
 								<div>{valueObject.mainInfo}</div>
 							</div>
 						</div>

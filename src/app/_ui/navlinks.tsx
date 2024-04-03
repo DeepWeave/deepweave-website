@@ -6,8 +6,6 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-// Map of links to display in navigation.
-
 const links = [
 	{ name: "HOME", href: "/" },
 	{ name: "ABOUT", href: "/about" },
@@ -16,7 +14,14 @@ const links = [
 	{ name: "CONTACT", href: "/contact" },
 ];
 
-export default function NavLinks() {
+import PropTypes from "prop-types";
+
+NavLinks.propTypes = {
+	handleLinkClick: PropTypes.func,
+	isDropDownOpen: PropTypes.bool,
+};
+
+export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 	const pathname = usePathname();
 
 	return (
@@ -26,11 +31,22 @@ export default function NavLinks() {
 					<Link
 						key={link.name}
 						href={link.href}
+						onClick={handleLinkClick}
 						className={clsx("text-white", {
-							"font-bold text-yellow-400": pathname === link.href,
+							"font-bold text-yellow-400":
+								!isDropDownOpen && pathname === link.href,
+							// "p-2": isDropDownOpen,
 						})}
 					>
-						<p className='ml-5 mr-5 hover:font-bold'>{link.name}</p>
+						<p
+							className={
+								isDropDownOpen
+									? "py-2 hover:font-bold hover:bg-sky-tint-light"
+									: "hover:font-bold ml-5 mr-5"
+							}
+						>
+							{link.name}
+						</p>
 					</Link>
 				);
 			})}

@@ -20,7 +20,7 @@ export default function Services() {
 						results and to make steady progress toward them.
 					</p>
 					{/* Blocks with services listed */}
-					<div className='flex flex-wrap justify-center'>
+					<div className='flex flex-wrap justify-center z-10'>
 						{serviceObjects.map((serviceObject, index) => (
 							<div
 								key={index}
@@ -29,7 +29,7 @@ export default function Services() {
 								<div className='bg-sky-700 text-yellow-400 font-semibold mt-10 py-3 pl-3 text-xl h-20 w-80'>
 									{serviceObject.service}
 								</div>
-								<div className='bg-sky-700 opacity-70 text-white pt-3 pb-1 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
+								<div className='bg-sky-tint text-white pt-3 pb-1 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
 									<div>{serviceObject.mainInfo}</div>
 									<Link href={`#${serviceObject.idAttribute}`}>
 										<div className='uppercase underline underline-offset-4'>

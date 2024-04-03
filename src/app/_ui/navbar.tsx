@@ -12,6 +12,11 @@ export default function Navbar() {
 		setIsDropdownOpen(!isDropdownOpen);
 	};
 
+	const handleLinkClick = () => {
+		setIsDropdownOpen(false); // Close the dropdown when a link is clicked
+	};
+
+
 	return (
 		<>
 			<div className='w-full h-15 sticky bg-sky-700'>
@@ -25,22 +30,29 @@ export default function Navbar() {
 						/>
 						<div className='text-xl text-white ml-2'>DeepWeave</div>
 					</div>
+					{/* regular menu to display on larger screens*/}
 					<div className='hidden md:flex items-center'>
 						<NavLinks />
 					</div>
+					{/* hamburger menu to display on small screens*/}
 					<div className='flex items-center lg:hidden cursor-pointer'>
 						<div className='flex items-center'>
+							{/* Toggle between hamburger menu and close icon based on isDropdownOpen state */}
 							<button
 								id='hamburger-button'
 								className='text-5xl text-white cursor-pointer md:hidden'
 								onClick={toggleDropdown}
 							>
-								&#9776;
+								<span
+									dangerouslySetInnerHTML={{
+										__html: isDropdownOpen ? "&times;" : "&#9776;",
+									}}
+								/>
 							</button>
 						</div>
 						{isDropdownOpen && (
-							<div className='absolute top-15 left-0 right-0  bg-black border border-gray-300 p-2'>
-								<NavLinks />
+							<div className='absolute top-[75px] left-0 text-center right-0 z-50 bg-sky-tint'>
+								<NavLinks handleLinkClick={handleLinkClick} isDropDownOpen />
 							</div>
 						)}
 					</div>
