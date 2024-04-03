@@ -13,10 +13,6 @@ const config: Config = {
 			fontFamily: {
 				sans: ["Arial", "sans-serif"],
 			},
-			screens: {
-				widescreen: { raw: "(min-aspect-ratio:3/2" },
-				tallscreen: { raw: "(min-aspect-ratio:13/20" },
-			},
 			container: {
 				center: true,
 			},

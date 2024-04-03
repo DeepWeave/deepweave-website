@@ -24,7 +24,7 @@ export default function Services() {
 						{serviceObjects.map((serviceObject, index) => (
 							<div
 								key={index}
-								className='flex flex-col drop-shadow-lg md:mr-10'
+								className='flex flex-col drop-shadow-lg transform hover:scale-105 mx-10'
 							>
 								<div className='bg-sky-700 text-yellow-400 font-semibold mt-10 py-3 pl-3 text-xl h-20 w-80'>
 									{serviceObject.service}
@@ -32,7 +32,7 @@ export default function Services() {
 								<div className='bg-sky-tint text-white pt-3 pb-1 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
 									<div>{serviceObject.mainInfo}</div>
 									<Link href={`#${serviceObject.idAttribute}`}>
-										<div className='uppercase underline underline-offset-4'>
+										<div className='uppercase underline underline-offset-4 hover:text-yellow-400'>
 											Learn more
 										</div>
 									</Link>
