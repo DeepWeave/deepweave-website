@@ -1,6 +1,7 @@
 /** @format */
 
 interface ServiceObject {
+	idAttribute: string;
 	service: string;
 	mainInfo: string;
 	secondaryInfo: {
@@ -20,6 +21,7 @@ interface ValuesObject {
 
 export const serviceObjects: ServiceObject[] = [
 	{
+		idAttribute: "PerformanceManagement",
 		service: "Performance Management and Reporting",
 		mainInfo:
 			"Use data to plan, track, and report on services, programs and strategies",
@@ -60,6 +62,7 @@ export const serviceObjects: ServiceObject[] = [
 		],
 	},
 	{
+		idAttribute: "DataManagement",
 		service: "Data Management and Data Governance",
 		mainInfo:
 			"Ensure quality and prevent harm in data uses ranging from performance measurement to AI",
@@ -95,6 +98,7 @@ export const serviceObjects: ServiceObject[] = [
 		],
 	},
 	{
+		idAttribute: "RFP",
 		service: "RFP and Grant Proposal Evaluation",
 		mainInfo:
 			"Create consistent, effective selection processes that integrate your organization’s values",
