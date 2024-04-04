@@ -32,19 +32,16 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 						key={link.name}
 						href={link.href}
 						onClick={handleLinkClick}
-						className={clsx(
-							"text-white tracking-widest transition ease-out duration-500",
-							{
-								"font-bold text-yellow-400":
-									!isDropDownOpen && pathname === link.href,
-								// "p-2": isDropDownOpen,
-							}
-						)}
+						className={clsx("text-white tracking-widest custom-transition", {
+							"font-bold text-yellow-400":
+								!isDropDownOpen && pathname === link.href,
+							// "p-2": isDropDownOpen,
+						})}
 					>
 						<p
 							className={
 								isDropDownOpen
-									? "py-2 hover:font-bold hover:bg-sky-tint-light"
+									? "py-2 hover:font-bold hover:bg-sky-tint-light custom-transition"
 									: "hover:font-bold ml-5 mr-5"
 							}
 						>

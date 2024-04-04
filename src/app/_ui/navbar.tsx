@@ -16,7 +16,6 @@ export default function Navbar() {
 		setIsDropdownOpen(false); // Close the dropdown when a link is clicked
 	};
 
-
 	return (
 		<>
 			<div className='w-full h-15 sticky bg-sky-700'>
@@ -40,7 +39,7 @@ export default function Navbar() {
 							{/* Toggle between hamburger menu and close icon based on isDropdownOpen state */}
 							<button
 								id='hamburger-button'
-								className='text-5xl text-white cursor-pointer md:hidden'
+								className='text-5xl text-white cursor-pointer custom-transition hover:text-stone-300 md:hidden'
 								onClick={toggleDropdown}
 							>
 								<span
@@ -51,7 +50,7 @@ export default function Navbar() {
 							</button>
 						</div>
 						{isDropdownOpen && (
-							<div className='absolute top-[75px] left-0 text-center right-0 z-50 bg-sky-tint transition delay-300'>
+							<div className='absolute top-[75px] left-0 text-center right-0 bg-sky-tint transition-all duration-500 delay-100'>
 								<NavLinks handleLinkClick={handleLinkClick} isDropDownOpen />
 							</div>
 						)}

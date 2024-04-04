@@ -16,7 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='en' className="scroll-smooth">
 			<head>
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<link
@@ -26,7 +26,7 @@ export default function RootLayout({
 					sizes='<generated>'
 				/>
 			</head>
-			<body className='m-0 p-0'>
+			<body className='m-0 p-0 bg-sky-bg'>
 				<Navbar />
 				{children}
 			</body>

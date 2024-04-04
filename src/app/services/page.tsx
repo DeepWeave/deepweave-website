@@ -24,7 +24,7 @@ export default function Services() {
 						{serviceObjects.map((serviceObject, index) => (
 							<div
 								key={index}
-								className='flex flex-col drop-shadow-lg transform hover:scale-105 mx-10'
+								className='flex flex-col drop-shadow-[0px_1px_5px_rgba(0,0,0,0.50)] mx-10 custom-transition'
 							>
 								<div className='bg-sky-700 text-yellow-400 font-semibold mt-10 py-3 pl-3 text-xl h-20 w-80'>
 									{serviceObject.service}
@@ -78,7 +78,7 @@ export default function Services() {
 													target='_blank'
 													rel='noopener noreferrer'
 												>
-													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-8 mt-3 hover:text-sky-800'>
+													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-8 mt-3 custom-transition hover:text-sky-800'>
 														{article.title}
 													</h2>
 												</a>

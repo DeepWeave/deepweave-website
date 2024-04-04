@@ -11,27 +11,26 @@ export default function LinkedLogo_hover() {
 	return (
 		<Link href='https://www.linkedin.com/in/ericjackson/'>
 			<div
-				className='flex items-end mt-5 mb-5'
+				className='flex items-end mt-5 mb-5 custom-transition'
 				onMouseEnter={onMouseEnter}
 				onMouseLeave={onMouseLeave}
 			>
 				{isHovering ? (
 					<Image
-						src='/LinkedIn_hover.png'
+						src='/LinkedIn-blue-hover.png'
 						width={30}
 						height={15}
 						alt='LinkedIn Logo'
 					/>
 				) : (
 					<Image
-						src='/LinkedIn.png'
+						src='/LinkedIn-blue.png'
 						width={30}
 						height={15}
 						alt='LinkedIn Logo'
 					/>
 				)}
-
-				<p className='text-stone-600 italic font-semibold tracking-wider ml-2 hover:text-stone-700'>
+				<p className='text-sky-700 italic font-semibold tracking-wider ml-2 hover:text-sky-800'>
 					See LinkedIn
 				</p>
 			</div>
