@@ -20,7 +20,10 @@ export default function Services() {
 						results and to make steady progress toward them.
 					</p>
 					{/* Blocks with services listed */}
-					<div className='flex flex-wrap justify-center z-10'>
+					<div
+						className='flex flex-wrap justify-center z-10'
+						id='serviceBlocks'
+					>
 						{serviceObjects.map((serviceObject, index) => (
 							<div
 								key={index}
@@ -82,6 +85,16 @@ export default function Services() {
 														{article.title}
 													</h2>
 												</a>
+												<div>
+													<Link
+														href="#serviceBlocks"
+														className='md:hidden'
+													>
+														<button className='bg-yellow-400 text-sky-700 font-semibold text-sm py-2 px-4 rounded-full tracking-wider custom-transition mt-7 uppercase hover:bg-yellow-500 md:py-2 md:px-8 md:text-base'>
+															Services
+														</button>
+													</Link>
+												</div>
 											</div>
 										))}
 									</div>

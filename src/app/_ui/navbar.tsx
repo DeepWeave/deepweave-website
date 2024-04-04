@@ -50,7 +50,7 @@ export default function Navbar() {
 							</button>
 						</div>
 						{isDropdownOpen && (
-							<div className='absolute top-[75px] left-0 text-center right-0 bg-sky-tint transition-all duration-500 delay-100'>
+							<div className='absolute top-[75px] left-0 text-center right-0 bg-sky-tint transition-all duration-500 delay-100 pb-3'>
 								<NavLinks handleLinkClick={handleLinkClick} isDropDownOpen />
 							</div>
 						)}
