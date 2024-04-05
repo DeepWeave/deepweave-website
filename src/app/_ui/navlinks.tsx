@@ -60,7 +60,7 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			</Link>
 
 			{/* Values */}
-			<Link href='/values'>
+			<Link href='/services'>
 				<p
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
@@ -75,24 +75,22 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			</Link>
 
 			{/* Contact */}
-			<a
-				href={
-					window.innerWidth < 640
-						? "https://forms.gle/3aWKbfZmX2EFMZDG9"
-						: "/contact"
-				}
-				target={window.innerWidth < 640 ? "_blank" : ""}
-				className={clsx("text-white tracking-widest custom-transition", {
-					"font-bold text-yellow-400":
-						!isDropDownOpen && pathname === "/contact",
-					"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-						isDropDownOpen,
-					"hover:font-bold ml-5 mr-5": !isDropDownOpen,
-				})}
-				onClick={handleLinkClick}
+			<Link
+				href={window.innerWidth < 640 ? "/ContactRedirect" : "/contact"}
+				target={window.innerWidth < 640 ? "_blank": ""}
 			>
-				CONTACT
-			</a>
+				<p
+					className={clsx("text-white tracking-widest custom-transition", {
+						"font-bold text-yellow-400":
+							!isDropDownOpen && pathname === "/contact",
+						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+							isDropDownOpen,
+						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
+					})}
+				>
+					CONTACT
+				</p>
+			</Link>
 		</>
 	);
 }
