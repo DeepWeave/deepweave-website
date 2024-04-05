@@ -33,7 +33,7 @@ export default function Home() {
 					</div>
 					<div className='flex pt-9 pb-5 justify-end sm:pr-3'>
 						<Link href='/contact'>
-							<button className='bg-yellow-400 text-sky-700 font-semibold text-sm py-1 px-4 rounded-full tracking-wider custom-transition hover:bg-yellow-500 md:py-2 md:px-8 md:text-base'>
+							<button className='bg-sky-700 text-yellow-400 font-semibold text-sm py-1 px-4 rounded-full tracking-wider custom-transition hover:bg-sky-800 md:py-2 md:px-8 md:text-base'>
 								CONTACT
 							</button>
 						</Link>

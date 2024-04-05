@@ -81,7 +81,7 @@ export default function Services() {
 													target='_blank'
 													rel='noopener noreferrer'
 												>
-													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-8 mt-3 custom-transition hover:text-sky-800'>
+													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
 														{article.title}
 													</h2>
 												</a>

@@ -7,13 +7,19 @@ import { useState } from "react";
 
 export default function Navbar() {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const [rotate, setRotate] = useState(false); 
+	const [hideRectangle, setHideRectangle] = useState(false);
 
 	const toggleDropdown = () => {
 		setIsDropdownOpen(!isDropdownOpen);
+		setRotate(!rotate);
+		setHideRectangle(!hideRectangle);
 	};
 
 	const handleLinkClick = () => {
-		setIsDropdownOpen(false); // Close the dropdown when a link is clicked
+		setIsDropdownOpen(!isDropdownOpen);
+		setRotate(!rotate);
+		setHideRectangle(!hideRectangle);
 	};
 
 	return (
@@ -27,26 +33,63 @@ export default function Navbar() {
 							height={75}
 							alt='DeepWeave Logo'
 						/>
-						<div className='text-xl text-white ml-2'>DeepWeave</div>
+						<div className='text-2xl text-white ml-2'>DeepWeave</div>
 					</div>
 					{/* regular menu to display on larger screens*/}
 					<div className='hidden  md:flex md:items-center md:mx-0'>
 						<NavLinks />
 					</div>
 					{/* hamburger menu to display on small screens*/}
-					<div className='flex items-center lg:hidden cursor-pointer'>
-						<div className='flex items-center'>
-							{/* Toggle between hamburger menu and close icon based on isDropdownOpen state */}
-							<button
-								id='hamburger-button'
-								className='text-5xl text-white cursor-pointer custom-transition mr-5 hover:text-stone-300 md:hidden'
-								onClick={toggleDropdown}
-							>
-								<span
-									dangerouslySetInnerHTML={{
-										__html: isDropdownOpen ? "&times;" : "&#9776;",
-									}}
-								/>
+					<div className='flex items-center text-white mr-3 lg:hidden cursor-pointer'>
+						<div className='flex items-center relative h-full transition-delay hover:text-yellow-400'>
+							<button onClick={toggleDropdown}>
+								<svg viewBox='0 0 100 100' className='w-9 h-9 items-center p-1'>
+									{/* top rectangle */}
+									{!hideRectangle && (
+										<rect
+											className='fill-current rounded-lg'
+											width='80'
+											height='10'
+											x='10'
+											y='20'
+											rx='5'
+											ry='5'
+										/>
+									)}
+									{/* middle rectangles */}
+									<rect
+										className='fill-current transition-transform duration-300'
+										width='80'
+										height='10'
+										x='10'
+										y='50'
+										rx='5'
+										ry='5'
+										transform={rotate ? "rotate(45  50 55)" : ""}
+									/>
+									<rect
+										className='fill-current transition-transform duration-300'
+										width='80'
+										height='10'
+										x='10'
+										y='50'
+										rx='5'
+										ry='5'
+										transform={rotate ? "rotate(-45  50 55)" : ""}
+									/>
+									{/* bottom rectangle */}
+									{!hideRectangle && (
+										<rect
+											className='fill-current'
+											width='80'
+											height='10'
+											x='10'
+											y='80'
+											rx='5'
+											ry='5'
+										/>
+									)}
+								</svg>
 							</button>
 						</div>
 						{isDropdownOpen && (

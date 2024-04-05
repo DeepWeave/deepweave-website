@@ -22,18 +22,6 @@ const config: Config = {
 				"sky-tint-light": "#4e96bd",
 				"sky-bg": "#e6fof6",
 			},
-			transitionDelay: {
-				"100": "100ms",
-				"200": "200ms",
-				"300": "300ms",
-			},
-			transitionDuration: {
-				"500": "500ms",
-				"1000": "1000ms",
-			},
-			scale: {
-				"105": "1.05",
-			},
 		},
 	},
 	plugins: [],
