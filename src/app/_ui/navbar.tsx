@@ -19,8 +19,8 @@ export default function Navbar() {
 	return (
 		<>
 			<div className='w-full h-15 sticky bg-sky-700'>
-				<div className='flex justify-between ml-5 mr-5 sm:mr-2'>
-					<div className='flex items-center'>
+				<div className='flex justify-between ml-2 md:mr-2 md:justify-between'>
+					<div className='flex items-center md:mr-5'>
 						<Image
 							src='/DeepWeave_logo.png'
 							width={75}
@@ -30,7 +30,7 @@ export default function Navbar() {
 						<div className='text-xl text-white ml-2'>DeepWeave</div>
 					</div>
 					{/* regular menu to display on larger screens*/}
-					<div className='hidden md:flex items-center'>
+					<div className='hidden  md:flex md:items-center md:mx-0'>
 						<NavLinks />
 					</div>
 					{/* hamburger menu to display on small screens*/}
@@ -39,7 +39,7 @@ export default function Navbar() {
 							{/* Toggle between hamburger menu and close icon based on isDropdownOpen state */}
 							<button
 								id='hamburger-button'
-								className='text-5xl text-white cursor-pointer custom-transition hover:text-stone-300 md:hidden'
+								className='text-5xl text-white cursor-pointer custom-transition mr-5 hover:text-stone-300 md:hidden'
 								onClick={toggleDropdown}
 							>
 								<span

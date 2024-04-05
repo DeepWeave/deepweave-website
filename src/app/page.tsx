@@ -22,7 +22,7 @@ export default function Home() {
 					objectFit='cover'
 				/>
 			</div>
-			<div className='flex bg-white-opacity-50 w-full justify-center mt-40 sm:justify-start md:justify-start'>
+			<div className='flex bg-white-opacity-70 w-full justify-center mt-40 sm:justify-start md:justify-start'>
 				<div className='flex flex-col mt-10'>
 					<div
 						className={

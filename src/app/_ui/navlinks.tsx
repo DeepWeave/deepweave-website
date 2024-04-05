@@ -18,6 +18,7 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			{/* Home */}
 			<Link href='/'>
 				<p
+					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400": !isDropDownOpen && pathname === "/",
 						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
@@ -32,6 +33,7 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			{/* About */}
 			<Link href='/about'>
 				<p
+					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
 							!isDropDownOpen && pathname === "/about",
@@ -47,6 +49,7 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			{/* Services */}
 			<Link href='/services'>
 				<p
+					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
 							!isDropDownOpen && pathname === "/services",
@@ -60,8 +63,9 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			</Link>
 
 			{/* Values */}
-			<Link href='/services'>
+			<Link href='/values'>
 				<p
+					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
 							!isDropDownOpen && pathname === "/values",
@@ -76,8 +80,9 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 
 			{/* Contact */}
 			<Link
+				onClick={handleLinkClick}
 				href={window.innerWidth < 640 ? "/ContactRedirect" : "/contact"}
-				target={window.innerWidth < 640 ? "_blank": ""}
+				target={window.innerWidth < 640 ? "_blank" : ""}
 			>
 				<p
 					className={clsx("text-white tracking-widest custom-transition", {
