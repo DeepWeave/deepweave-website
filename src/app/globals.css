@@ -3,3 +3,13 @@
 @tailwind utilities;
 
 
+.custom-transition {
+  transform: scale(1);
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
+}
+
+.custom-transition:hover {
+  transform: scale(1.05);
+}
