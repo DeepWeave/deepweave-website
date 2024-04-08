@@ -57,9 +57,9 @@ export const serviceObjects: ServiceObject[] = [
 		],
 		articles: [
 			{
-				title: "Thinking About Performance: Operations vs Strategy",
-				href: "www.google.com",
-				tags: ["Performance", "Strategy"],
+				title: "What is Data-Driven Decision Making? A Case Study",
+				href: "https://www.linkedin.com/pulse/what-data-driven-decision-making-case-study-eric-jackson-nyvre/",
+				tags: ["Performance", "data-driven-decisions"],
 			},
 		],
 	},
