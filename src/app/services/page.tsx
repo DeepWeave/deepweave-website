@@ -77,7 +77,7 @@ export default function Services() {
 										{serviceObject.articles.map((article, articleIndex) => (
 											<div key={articleIndex}>
 												<a
-													href='https://www.google.com'
+													href={article.href}
 													target='_blank'
 													rel='noopener noreferrer'
 												>
