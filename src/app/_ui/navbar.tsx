@@ -1,36 +1,102 @@
 /** @format */
 
+"use client";
 import Image from "next/image";
 import NavLinks from "./navlinks";
+import { useState } from "react";
 
-export default function NavbarTwo() {
+export default function Navbar() {
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const [rotate, setRotate] = useState(false); 
+	const [hideRectangle, setHideRectangle] = useState(false);
+
+	const toggleDropdown = () => {
+		setIsDropdownOpen(!isDropdownOpen);
+		setRotate(!rotate);
+		setHideRectangle(!hideRectangle);
+	};
+
+	const handleLinkClick = () => {
+		setIsDropdownOpen(!isDropdownOpen);
+		setRotate(!rotate);
+		setHideRectangle(!hideRectangle);
+	};
+
 	return (
 		<>
-			<div className='w-full h-15 bg-sky-700'>
-				<div className='flex justify-between ml-5 mr-5'>
-					{/* I want this div to be on the left side of the navbar */}
-					<div className='flex items-center'>
+			<div className='w-full h-15 sticky bg-sky-700'>
+				<div className='flex justify-between ml-2 md:mr-2 md:justify-between'>
+					<div className='flex items-center md:mr-5'>
 						<Image
 							src='/DeepWeave_logo.png'
 							width={75}
 							height={75}
 							alt='DeepWeave Logo'
 						/>
-						<div className='text-xl text-white ml-2'>DeepWeave</div>
+						<div className='text-2xl text-white ml-2'>DeepWeave</div>
 					</div>
-					{/* I want this div to be on the right side of the navbar */}
-					<div className='hidden md:flex items-center'>
+					{/* regular menu to display on larger screens*/}
+					<div className='hidden  md:flex md:items-center md:mx-0'>
 						<NavLinks />
 					</div>
-					<div className='flex items-center lg:hidden cursor-pointer'>
-						<div className='flex items-center'>
-							<button
-								id='hamburger-button'
-								className='text-3xl text-white md:hidden cursor-pointer' // Hidden on lg screens and above
-							>
-								&#9776;
+					{/* hamburger menu to display on small screens*/}
+					<div className='flex items-center text-white mr-3 lg:hidden cursor-pointer'>
+						<div className='flex items-center relative h-full transition-delay hover:text-yellow-400'>
+							<button onClick={toggleDropdown}>
+								<svg viewBox='0 0 100 100' className='w-9 h-9 items-center p-1'>
+									{/* top rectangle */}
+									{!hideRectangle && (
+										<rect
+											className='fill-current rounded-lg'
+											width='80'
+											height='10'
+											x='10'
+											y='20'
+											rx='5'
+											ry='5'
+										/>
+									)}
+									{/* middle rectangles */}
+									<rect
+										className='fill-current transition-transform duration-300'
+										width='80'
+										height='10'
+										x='10'
+										y='50'
+										rx='5'
+										ry='5'
+										transform={rotate ? "rotate(45  50 55)" : ""}
+									/>
+									<rect
+										className='fill-current transition-transform duration-300'
+										width='80'
+										height='10'
+										x='10'
+										y='50'
+										rx='5'
+										ry='5'
+										transform={rotate ? "rotate(-45  50 55)" : ""}
+									/>
+									{/* bottom rectangle */}
+									{!hideRectangle && (
+										<rect
+											className='fill-current'
+											width='80'
+											height='10'
+											x='10'
+											y='80'
+											rx='5'
+											ry='5'
+										/>
+									)}
+								</svg>
 							</button>
 						</div>
+						{isDropdownOpen && (
+							<div className='absolute top-[75px] left-0 text-center right-0 bg-sky-tint transition-all duration-500 delay-100 pb-3'>
+								<NavLinks handleLinkClick={handleLinkClick} isDropDownOpen />
+							</div>
+						)}
 					</div>
 				</div>
 			</div>

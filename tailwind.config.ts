@@ -1,3 +1,5 @@
+/** @format */
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -11,12 +13,19 @@ const config: Config = {
 			fontFamily: {
 				sans: ["Arial", "sans-serif"],
 			},
-			screens: {
-				'widescreen': { raw: "(min-aspect-ratio:3/2" },
-				'tallscreen': { raw: "(min-aspect-ratio:13/20" },
+			container: {
+				center: true,
+			},
+			backgroundColor: {
+				"white-opacity-70": "rgba(255, 255, 255, 0.70)",
+				"sky-tint": "#3587b3",
+				"sky-tint-light": "#4e96bd",
+				"sky-bg": "#e6fof6",
 			},
 		},
 	},
 	plugins: [],
 };
+
+
 export default config;
