@@ -40,7 +40,7 @@ export default function Navbar() {
 						<NavLinks handleLinkClick={handleLinkClick} />
 					</div>
 					{/* hamburger menu to display on small screens*/}
-					<div className='flex items-center text-white mr-3 lg:hidden cursor-pointer'>
+					<div className='flex items-center text-white mr-3 md:hidden cursor-pointer'>
 						<div className='flex items-center relative h-full transition-delay hover:text-yellow-400'>
 							<button onClick={toggleDropdown}>
 								<svg viewBox='0 0 100 100' className='w-9 h-9 items-center p-1'>
