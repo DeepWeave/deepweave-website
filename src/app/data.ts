@@ -70,13 +70,6 @@ export const serviceObjects: ServiceObject[] = [
 			"Ensure quality and prevent harm in data uses ranging from performance measurement to AI",
 		secondaryInfo: [
 			{
-				title: "Measure Performance",
-				bulletPoints: [
-					"Develop metrics to track program and service operations and impact",
-					"Develop internal and external program and service performance reporting",
-				],
-			},
-			{
 				title: "Assess and Mitigate Data and AI Risks",
 				bulletPoints: [
 					"Assess data quality issues and develop strategies to address them",
