@@ -7,10 +7,10 @@ import { useState, useEffect, MouseEventHandler } from "react";
 
 interface NavLinksProps {
 	handleLinkClick: MouseEventHandler<HTMLParagraphElement>;
-	isDropDownOpen: boolean;
+	isDropdownOpen?: boolean;
 }
 
-export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksProps) {
+export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksProps) {
 	const [isSmallScreen, setIsSmallScreen] = useState(false);
 	const pathname = usePathname();
 
@@ -34,10 +34,10 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 				<p
 					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
-						"font-bold text-yellow-400": !isDropDownOpen && pathname === "/",
+						"font-bold text-yellow-400": !isDropdownOpen && pathname === "/",
 						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
+							isDropdownOpen,
+						"hover:font-bold ml-5 mr-5": !isDropdownOpen,
 					})}
 				>
 					HOME
@@ -50,10 +50,10 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/about",
+							!isDropdownOpen && pathname === "/about",
 						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
+							isDropdownOpen,
+						"hover:font-bold ml-5 mr-5": !isDropdownOpen,
 					})}
 				>
 					ABOUT
@@ -66,10 +66,10 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/services",
+							!isDropdownOpen && pathname === "/services",
 						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
+							isDropdownOpen,
+						"hover:font-bold ml-5 mr-5": !isDropdownOpen,
 					})}
 				>
 					SERVICES
@@ -82,10 +82,10 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/values",
+							!isDropdownOpen && pathname === "/values",
 						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
+							isDropdownOpen,
+						"hover:font-bold ml-5 mr-5": !isDropdownOpen,
 					})}
 				>
 					VALUES
@@ -101,10 +101,10 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/contact",
+							!isDropdownOpen && pathname === "/contact",
 						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
+							isDropdownOpen,
+						"hover:font-bold ml-5 mr-5": !isDropdownOpen,
 					})}
 				>
 					CONTACT

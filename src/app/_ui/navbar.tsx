@@ -37,7 +37,7 @@ export default function Navbar() {
 					</div>
 					{/* regular menu to display on larger screens*/}
 					<div className='hidden  md:flex md:items-center md:mx-0'>
-						<NavLinks />
+						<NavLinks handleLinkClick={handleLinkClick} />
 					</div>
 					{/* hamburger menu to display on small screens*/}
 					<div className='flex items-center text-white mr-3 lg:hidden cursor-pointer'>
@@ -94,7 +94,10 @@ export default function Navbar() {
 						</div>
 						{isDropdownOpen && (
 							<div className='absolute top-[75px] left-0 text-center right-0 bg-sky-tint transition-all duration-500 delay-100 pb-3'>
-								<NavLinks handleLinkClick={handleLinkClick} isDropDownOpen />
+								<NavLinks
+									handleLinkClick={handleLinkClick}
+									isDropdownOpen={isDropdownOpen}
+								/>
 							</div>
 						)}
 					</div>
