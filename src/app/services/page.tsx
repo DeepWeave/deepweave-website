@@ -85,13 +85,11 @@ export default function Services() {
 														{article.title}
 													</h2>
 												</a>
+												{/* Button for small screens to navigate back to services */}
 												<div>
-													<Link
-														href="#serviceBlocks"
-														className='md:hidden'
-													>
+													<Link href='#serviceBlocks' className='md:hidden'>
 														<button className='bg-yellow-400 text-sky-700 font-semibold text-sm py-2 px-4 rounded-full tracking-wider custom-transition mt-7 uppercase hover:bg-yellow-500 md:py-2 md:px-8 md:text-base'>
-															Services
+															Back to Top
 														</button>
 													</Link>
 												</div>
