@@ -3,15 +3,29 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import PropTypes from "prop-types";
+import { useState, useEffect, MouseEventHandler } from "react";
 
-NavLinks.propTypes = {
-	handleLinkClick: PropTypes.func,
-	isDropDownOpen: PropTypes.bool,
-};
+interface NavLinksProps {
+	handleLinkClick: MouseEventHandler<HTMLParagraphElement>;
+	isDropDownOpen: boolean;
+}
 
-export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
+export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksProps) {
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
 	const pathname = usePathname();
+
+	useEffect(() => {
+		function handleResize() {
+			setIsSmallScreen(window.innerWidth < 640);
+		}
+
+		handleResize(); // Call handleResize initially to set the correct initial state
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	return (
 		<>
@@ -80,11 +94,11 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 
 			{/* Contact */}
 			<Link
-				onClick={handleLinkClick}
-				href={window.innerWidth < 640 ? "/ContactRedirect" : "/contact"}
-				target={window.innerWidth < 640 ? "_blank" : ""}
+				href={isSmallScreen ? "/ContactRedirect" : "/contact"}
+				target={isSmallScreen ? "_blank" : ""}
 			>
 				<p
+					onClick={handleLinkClick}
 					className={clsx("text-white tracking-widest custom-transition", {
 						"font-bold text-yellow-400":
 							!isDropDownOpen && pathname === "/contact",

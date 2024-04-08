@@ -1,10 +1,26 @@
 /** @format */
 
+"use client";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+	useEffect(() => {
+		function handleResize() {
+			setIsSmallScreen(window.innerWidth < 640);
+		}
+
+		handleResize(); // Call handleResize initially to set the correct initial state
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	return (
 		<>
 			<div
@@ -32,8 +48,15 @@ export default function Home() {
 						Deliver Results <br /> for Your Community
 					</div>
 					<div className='flex pt-9 pb-5 justify-end sm:pr-3'>
-						<Link href='/contact'>
-							<button className='bg-sky-700 text-yellow-400 font-semibold text-sm py-1 px-4 rounded-full tracking-wider custom-transition hover:bg-sky-800 md:py-2 md:px-8 md:text-base'>
+						<Link
+							href={isSmallScreen ? "/ContactRedirect" : "/contact"}
+							target={isSmallScreen ? "_blank" : ""}
+						>
+							<button
+								className={`bg-sky-700 text-yellow-400 font-semibold text-sm py-1 px-4 rounded-full tracking-wider custom-transition hover:bg-sky-800 ${
+									isSmallScreen ? "md:py-2 md:px-8 md:text-base" : ""
+								}`}
+							>
 								CONTACT
 							</button>
 						</Link>
