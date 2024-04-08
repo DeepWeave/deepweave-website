@@ -108,10 +108,10 @@ export const serviceObjects: ServiceObject[] = [
 				],
 			},
 		],
-		articles: [
+		articles: [ 
 			{
-				title: "Weaving Equity into Grant and Vendor Evaluations",
-				href: "www.google.com",
+				title: "Coming soon ...", // Weaving Equity into Grant and Vendor Evaluations
+				href: "",
 				tags: ["Equity"], // Tags made up for the article
 			},
 		],
