@@ -87,8 +87,8 @@ export const serviceObjects: ServiceObject[] = [
 		],
 		articles: [
 			{
-				title: "What is Data Governance and Why Should I Care?",
-				href: "www.google.com",
+				title: "Avoid Data Problems by Asking the Right Questions",
+				href: "https://www.linkedin.com/pulse/avoid-data-problems-asking-right-questions-eric-jackson-zlkge/",
 				tags: ["Data Governance"],
 			},
 		],
