@@ -7,10 +7,10 @@ import { useState, useEffect, MouseEventHandler } from "react";
 
 interface NavLinksProps {
 	handleLinkClick: MouseEventHandler<HTMLParagraphElement>;
-	isDropDownOpen: boolean;
+	isDropdownOpen?: boolean;
 }
 
-export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksProps) {
+export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksProps) {
 	const [isSmallScreen, setIsSmallScreen] = useState(false);
 	const pathname = usePathname();
 
@@ -33,12 +33,15 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 			<Link href='/'>
 				<p
 					onClick={handleLinkClick}
-					className={clsx("text-white tracking-widest custom-transition", {
-						"font-bold text-yellow-400": !isDropDownOpen && pathname === "/",
-						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
-					})}
+					className={clsx(
+						"text-white tracking-widest custom-transition mx-5 md:mx-3",
+						{
+							"font-bold text-yellow-400": !isDropdownOpen && pathname === "/",
+							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+								isDropdownOpen,
+							"hover:font-bold": !isDropdownOpen,
+						}
+					)}
 				>
 					HOME
 				</p>
@@ -48,13 +51,16 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 			<Link href='/about'>
 				<p
 					onClick={handleLinkClick}
-					className={clsx("text-white tracking-widest custom-transition", {
-						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/about",
-						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
-					})}
+					className={clsx(
+						"text-white tracking-widest custom-transition mx-5 md:mx-3",
+						{
+							"font-bold text-yellow-400":
+								!isDropdownOpen && pathname === "/about",
+							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+								isDropdownOpen,
+							"hover:font-bold": !isDropdownOpen,
+						}
+					)}
 				>
 					ABOUT
 				</p>
@@ -64,13 +70,16 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 			<Link href='/services'>
 				<p
 					onClick={handleLinkClick}
-					className={clsx("text-white tracking-widest custom-transition", {
-						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/services",
-						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
-					})}
+					className={clsx(
+						"text-white tracking-widest custom-transition mx-5 md:mx-3",
+						{
+							"font-bold text-yellow-400":
+								!isDropdownOpen && pathname === "/services",
+							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+								isDropdownOpen,
+							"hover:font-bold": !isDropdownOpen,
+						}
+					)}
 				>
 					SERVICES
 				</p>
@@ -80,13 +89,16 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 			<Link href='/values'>
 				<p
 					onClick={handleLinkClick}
-					className={clsx("text-white tracking-widest custom-transition", {
-						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/values",
-						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
-					})}
+					className={clsx(
+						"text-white tracking-widest custom-transition mx-5 md:mx-3",
+						{
+							"font-bold text-yellow-400":
+								!isDropdownOpen && pathname === "/values",
+							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+								isDropdownOpen,
+							"hover:font-bold": !isDropdownOpen,
+						}
+					)}
 				>
 					VALUES
 				</p>
@@ -99,13 +111,16 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }: NavLinksPr
 			>
 				<p
 					onClick={handleLinkClick}
-					className={clsx("text-white tracking-widest custom-transition", {
-						"font-bold text-yellow-400":
-							!isDropDownOpen && pathname === "/contact",
-						"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-							isDropDownOpen,
-						"hover:font-bold ml-5 mr-5": !isDropDownOpen,
-					})}
+					className={clsx(
+						"text-white tracking-widest custom-transition mx-5 md:mx-3",
+						{
+							"font-bold text-yellow-400":
+								!isDropdownOpen && pathname === "/contact",
+							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+								isDropdownOpen,
+							"hover:font-bold": !isDropdownOpen,
+						}
+					)}
 				>
 					CONTACT
 				</p>

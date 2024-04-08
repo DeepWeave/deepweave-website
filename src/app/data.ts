@@ -57,9 +57,9 @@ export const serviceObjects: ServiceObject[] = [
 		],
 		articles: [
 			{
-				title: "Thinking About Performance: Operations vs Strategy",
-				href: "www.google.com",
-				tags: ["Performance", "Strategy"],
+				title: "What is Data-Driven Decision Making? A Case Study",
+				href: "https://www.linkedin.com/pulse/what-data-driven-decision-making-case-study-eric-jackson-nyvre/",
+				tags: ["Performance", "Data-driven Decisions"],
 			},
 		],
 	},
@@ -87,8 +87,8 @@ export const serviceObjects: ServiceObject[] = [
 		],
 		articles: [
 			{
-				title: "What is Data Governance and Why Should I Care?",
-				href: "www.google.com",
+				title: "Avoid Data Problems by Asking the Right Questions",
+				href: "https://www.linkedin.com/pulse/avoid-data-problems-asking-right-questions-eric-jackson-zlkge/",
 				tags: ["Data Governance"],
 			},
 		],
