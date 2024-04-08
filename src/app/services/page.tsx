@@ -4,6 +4,30 @@ import React from "react";
 import { serviceObjects } from "../data";
 import Link from "next/link";
 
+function articleTitle (title: string, href: string) {
+	let result;
+	if (href !== "") {
+		result = (
+			<a
+				href={href}
+				target='_blank'
+				rel='noopener noreferrer'
+			>
+				<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
+					{title}
+				</h2>
+			</a>
+		)
+	} else {
+		result = (
+			<h2 className='text-black-700 text-xl italic font-semibold tracking-wider mt-3 hover:text-sky-800'>
+				{title}
+			</h2>
+		)
+	}
+	return result;
+}
+
 export default function Services() {
 	return (
 		<>
@@ -76,15 +100,7 @@ export default function Services() {
 									<div>
 										{serviceObject.articles.map((article, articleIndex) => (
 											<div key={articleIndex}>
-												<a
-													href={article.href}
-													target='_blank'
-													rel='noopener noreferrer'
-												>
-													<h2 className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
-														{article.title}
-													</h2>
-												</a>
+												{articleTitle(article.title, article.href)}
 												{/* Button for small screens to navigate back to services */}
 												<div>
 													<Link href='#serviceBlocks' className='md:hidden'>
