@@ -4,6 +4,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import PropTypes from "prop-types";
+import { useState, useEffect } from "react";
 
 NavLinks.propTypes = {
 	handleLinkClick: PropTypes.func,
@@ -11,7 +12,21 @@ NavLinks.propTypes = {
 };
 
 export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
 	const pathname = usePathname();
+
+	useEffect(() => {
+		function handleResize() {
+			setIsSmallScreen(window.innerWidth < 640);
+		}
+
+		handleResize(); // Call handleResize initially to set the correct initial state
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	return (
 		<>
@@ -81,8 +96,8 @@ export default function NavLinks({ handleLinkClick, isDropDownOpen }) {
 			{/* Contact */}
 			<Link
 				onClick={handleLinkClick}
-				href={window.innerWidth < 640 ? "/ContactRedirect" : "/contact"}
-				target={window.innerWidth < 640 ? "_blank" : ""}
+				href={isSmallScreen ? "/ContactRedirect" : "/contact"}
+				target={isSmallScreen ? "_blank" : ""}
 			>
 				<p
 					className={clsx("text-white tracking-widest custom-transition", {
