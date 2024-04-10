@@ -20,10 +20,10 @@ function articleTitle (title: string, href: string) {
 		)
 	} else {
 		result = (
-			<h2 className='text-black-700 text-xl italic font-semibold tracking-wider mt-3 hover:text-sky-800'>
+			<h2 className='text-stone-600 text-xl italic font-semibold tracking-wider mt-3'>
 				{title}
 			</h2>
-		)
+		);
 	}
 	return result;
 }
