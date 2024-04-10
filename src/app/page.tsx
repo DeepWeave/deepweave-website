@@ -45,8 +45,8 @@ export default function Home() {
 							position: "fixed",
 							width: "100vw",
 							height: "100vh",
-							// opacity: isLoaded ? 1 : 0, // Hide the image until it's loaded
-							// transition: "opacity 0.1s ease-in-out",
+							opacity: isLoaded ? 1 : 0, // Hide the image until it's loaded
+							transition: "opacity 0.1s step-start",
 						}}
 					>
 						<Image
