@@ -37,8 +37,7 @@ export const serviceObjects: ServiceObject[] = [
 			{
 				title: "Develop Program and Service Strategies",
 				bulletPoints: [
-					"Define what a program or service improvement should achieve and how to tell if it’s succeeding",
-					"Use an iterative data-driven process to design change or program development strategies",
+					"Use an iterative data-driven process to design program change or development strategies",
 					"Develop an open data program that provides value to the community and to your organization",
 				],
 			},
