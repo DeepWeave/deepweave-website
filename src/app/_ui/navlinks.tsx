@@ -47,25 +47,6 @@ export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksPr
 				</p>
 			</Link>
 
-			{/* About */}
-			<Link href='/about'>
-				<p
-					onClick={handleLinkClick}
-					className={clsx(
-						"text-white tracking-widest custom-transition mx-5 md:mx-3",
-						{
-							"font-bold text-yellow-400":
-								!isDropdownOpen && pathname === "/about",
-							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
-								isDropdownOpen,
-							"hover:font-bold": !isDropdownOpen,
-						}
-					)}
-				>
-					ABOUT
-				</p>
-			</Link>
-
 			{/* Services */}
 			<Link href='/services'>
 				<p
@@ -101,6 +82,25 @@ export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksPr
 					)}
 				>
 					VALUES
+				</p>
+			</Link>
+
+			{/* About */}
+			<Link href='/about'>
+				<p
+					onClick={handleLinkClick}
+					className={clsx(
+						"text-white tracking-widest custom-transition mx-5 md:mx-3",
+						{
+							"font-bold text-yellow-400":
+								!isDropdownOpen && pathname === "/about",
+							"py-2 hover:font-bold hover:bg-sky-tint-light custom-transition":
+								isDropdownOpen,
+							"hover:font-bold": !isDropdownOpen,
+						}
+					)}
+				>
+					ABOUT
 				</p>
 			</Link>
 

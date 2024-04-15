@@ -9,7 +9,7 @@ export default function LinkedLogo_hover() {
 	const onMouseEnter = () => setIsHovered(true);
 	const onMouseLeave = () => setIsHovered(false);
 	return (
-		<Link href='https://www.linkedin.com/in/ericjackson/'>
+		<Link href='https://www.linkedin.com/in/ericjackson/' target="_blank">
 			<div
 				className='flex items-end mt-5 mb-5 custom-transition'
 				onMouseEnter={onMouseEnter}
