@@ -39,19 +39,15 @@ export const serviceObjects: ServiceObject[] = [
 				bulletPoints: [
 					"Define what a program or service improvement should achieve and how to tell if it’s succeeding",
 					"Use an iterative data-driven process to design change or program development strategies",
+					"Develop an open data program that provides value to the community and to your organization",
 				],
 			},
 			{
 				title:
 					"Build Organizational Capacity for Value-Driven Data-Informed Decision Making",
 				bulletPoints: [
-					"Training and strategy development to build capacity in a team, department or entire organization",
-				],
-			},
-			{
-				title: "Build an Effective Open Data Program",
-				bulletPoints: [
-					"Develop an open data program that provides value to the community and to your organization",
+					"Develop a long-term strategy to develop your organization's capacity to use data to drive results",
+					"Get training in data informed decision-making and effective data governance for a team, department or an entire organization",
 				],
 			},
 		],
