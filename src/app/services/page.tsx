@@ -39,8 +39,8 @@ export default function Services() {
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 						Consistently getting good results is hard because there is always
 						pressure to react to circumstances, rather than maintain a
-						proactive, disciplined approach. Each of the services below will
-						help you learn and apply simple frameworks to identify your desired
+						proactive, disciplined approach. The services will
+						help you apply simple frameworks to identify the desired
 						results and to make steady progress toward them.
 					</p>
 					{/* Blocks with services listed */}
