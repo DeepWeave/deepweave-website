@@ -23,11 +23,9 @@ export default function About() {
 						Eric Jackson brings deep expertise and experience to the use of data
 						to drive equitable results and high performance in the public sector, 
 						founding the Office of Data and Performance at the City of Asheville,
-						co-leading the launch of an enhanced version of
-						<a href="https://simplicity.ashevillenc.gov/" target="_blank">SimpliCity</a> for 
+						co-leading the launch of an enhanced version of <a href="https://simplicity.ashevillenc.gov/" target="_blank">SimpliCity</a> for 
 						exploring City data, and collaborating with Buncombe County and the local courts to
-						safely reduce the jail population and increase equity through the
-						<a href="https://www.buncombecounty.org/governing/depts/justice-services/key-initiatives/safety-justice-challenge.aspx"
+						safely reduce the jail population and increase equity through the <a href="https://www.buncombecounty.org/governing/depts/justice-services/key-initiatives/safety-justice-challenge.aspx"
 						target="_blank">Buncombe County Safety and Justice Challenge</a>.
 					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
