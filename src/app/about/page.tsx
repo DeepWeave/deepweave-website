@@ -33,7 +33,7 @@ export default function About() {
 						  target="_blank">Buncombe County Safety and Justice Challenge</a>.
 					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
-						A 35-year technology industry veteran who has worked
+						Eric is a 35-year technology industry veteran who has worked
 						in technical and executive roles in scientific research and
 						computing, enterprise software, and, most recently, municipal
 						government and community organizing. The constant through all these
