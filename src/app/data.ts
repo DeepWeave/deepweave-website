@@ -45,7 +45,7 @@ export const serviceObjects: ServiceObject[] = [
 				title:
 					"Build Organizational Capacity for Value-Driven Data-Informed Decision Making",
 				bulletPoints: [
-					"Develop a long-term strategy to develop your organization's capacity to use data to drive results",
+					"Develop a long-term strategy to build your organization's capacity to use data to drive results",
 					"Get training in data informed decision-making and effective data governance for a team, department or an entire organization",
 				],
 			},
@@ -117,16 +117,16 @@ export const valuesObjects: ValuesObject[] = [
 	{
 		value: "Centered on Community",
 		mainInfo:
-			"Governments and nonprofits exist to serve the community and so community impact and community perspective are critical lenses for everything these organizations do.",
+			"Governments and nonprofits exist to serve the community and thus community impact and community perspective are critical lenses for everything these organizations do.",
 	},
 	{
 		value: "Accountable",
 		mainInfo:
-			"Programs and initiatives must communicate clearly what they want to accomplish, how things are going, and how they are responding to challenges along the way.",
+			"Programs and initiatives must communicate clearly what they intend to accomplish, how things are going, and how they are responding to challenges along the way.",
 	},
 	{
 		value: "Equitable",
 		mainInfo:
-			"The goal is for everyone in the community to thrive, which means that organizations must take into account how historical and current systems create an uneven playing field.",
+			"For everyone in the community to thrive, organizations must take into account how historical and current systems create an uneven playing field.",
 	},
 ];
