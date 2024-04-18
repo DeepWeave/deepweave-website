@@ -69,15 +69,14 @@ export default function Home() {
 							</div>
 							<div className='flex pt-9 pb-5 justify-end sm:pr-3'>
 								<Link
-									href={isSmallScreen ? "/ContactRedirect" : "/contact"}
-									target={isSmallScreen ? "_blank" : ""}
+									href="/services"
 								>
 									<button
 										className={`bg-sky-700 text-yellow-400 font-semibold text-sm py-1 px-4 rounded-full tracking-wider custom-transition hover:bg-sky-800 ${
 											isSmallScreen ? "md:py-2 md:px-8 md:text-base" : ""
 										}`}
 									>
-										CONTACT
+										LEARN MORE
 									</button>
 								</Link>
 							</div>
