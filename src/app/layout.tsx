@@ -8,6 +8,7 @@ import Home from "./page";
 export const metadata: Metadata = {
 	title: "DeepWeave",
 	description: "DeepWeave",
+	metadataBase: new URL("https://deepweave.com/"),
 };
 
 export default function RootLayout({
