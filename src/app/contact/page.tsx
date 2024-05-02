@@ -12,7 +12,7 @@ export default function Contact() {
 				<iframe
 					src='https://docs.google.com/forms/d/e/1FAIpQLSekCfny7AnWZ3vqKRxyrjX-H3U2VBfytw559HrgRYQxSWE1Sg/viewform?embedded=true'
 					width='640'
-					height='814'
+					height='950'
 					className='py-5'
 				>
 					Loading…
