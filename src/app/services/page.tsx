@@ -71,8 +71,12 @@ export default function Services() {
 						<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 							For twice-monthly articles with principles and practical tips
 							for leaders and practitioners on how to use data to achieve
-							great results for your community, sign up for 
-							the <a href="https://deepweave.substack.com/" target="_blank"><em>I Don&apos;t Care About Data</em> newsletter</a>.
+							great results for your community, sign up for the&nbsp; 
+							<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
+								<span className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
+									I Don&apos;t Care About Data
+								</span> newsletter
+							</a>.
 						</p>
 					</div>
 					{/* Text describing services */}

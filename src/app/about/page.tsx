@@ -40,6 +40,17 @@ export default function About() {
 						endeavors has been the use of data to develop insights, make
 						decisions, and support accountability.
 					</p>
+					<p className='text-stone-600 mt-5 italic text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
+						For twice-monthly articles with principles and practical tips
+						for leaders and practitioners on how to use data to achieve
+						great results for your community, sign up for the&nbsp; 
+						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
+							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
+								I Don&apos;t Care About Data
+							</span> newsletter
+						</a>.
+					</p>
+
 					<LinkedLogo_hover />
 				</div>
 			</div>
