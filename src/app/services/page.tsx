@@ -67,6 +67,14 @@ export default function Services() {
 							</div>
 						))}
 					</div>
+					<div>
+						<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
+							For twice-monthly articles with principles and practical tips
+							for leaders and practitioners on how to use data to achieve
+							great results for your community, sign up for 
+							the <a href="https://deepweave.substack.com/" target="_blank"><em>I Don&apos;t Care About Data</em> newsletter</a>.
+						</p>
+					</div>
 					{/* Text describing services */}
 					<div>
 						{serviceObjects.map((serviceObject, index) => (
