@@ -57,6 +57,11 @@ export const serviceObjects: ServiceObject[] = [
 				tags: ["Performance", "Data-driven Decisions"],
 			},
 			{
+				title: "The 3 Commitments of a Data-Informed Organization: Part 1",
+				href: "https://deepweave.substack.com/p/3-commitments-part-1",
+				tags: ["Performance", "Data-driven Decisions"]
+			},
+			{
 				title: "What is Data-Driven Decision Making? A Case Study",
 				href: "https://www.linkedin.com/pulse/what-data-driven-decision-making-case-study-eric-jackson-nyvre/",
 				tags: ["Performance", "Data-driven Decisions"],
