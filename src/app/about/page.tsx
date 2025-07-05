@@ -20,30 +20,17 @@ export default function About() {
 						About Eric Jackson
 					</h1>
 					<p className='text-stone-600 mt-5 text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
-						Eric Jackson brings deep expertise and experience to the use of data
-						to drive equitable results and high performance in the public sector, 
-						founding the Office of Data and Performance at the City of Asheville,
-						co-leading the launch of an enhanced version 
-						of <a className='text-sky-700 underline underline-offset-2 hover:text-sky-800' 
-						  href="https://simplicity.ashevillenc.gov/" target="_blank">SimpliCity</a> for 
-						exploring City data, and collaborating with Buncombe County and the local courts to
-						safely reduce the jail population and increase equity through 
-						the <a className='text-sky-700 underline underline-offset-2 hover:text-sky-800'
-						  href="https://www.buncombecounty.org/governing/depts/justice-services/key-initiatives/safety-justice-challenge.aspx"
-						  target="_blank">Buncombe County Safety and Justice Challenge</a>.
-					</p>
-					<p className='text-stone-600 mt-5 text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
-						Eric is a 35-year technology industry veteran who has worked
-						in technical and executive roles in scientific research and
-						computing, enterprise software, and, most recently, municipal
-						government and community organizing. The constant through all these
-						endeavors has been the use of data to develop insights, make
-						decisions, and support accountability.
+						I am an independent community organizer, researcher, and consultant interested
+						in what we can do to create a just community where everyone can thrive. I have
+						worked for nearly 40 years in a variety of technical and executive roles in
+						scientific research and computing, enterprise software, and, most recently,
+						municipal government and community organizing. One constant through all these
+						endeavors has been the use of data to develop insights, make decisions, and
+						support accountability.
 					</p>
 					<p className='text-stone-600 mt-5 italic text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
-						For twice-monthly articles with principles and practical tips
-						for leaders and practitioners on how to use data to achieve
-						great results for your community, sign up for the&nbsp; 
+						For regular reflections, stories, observations, and explorations of others’
+						wisdom about building resilient and just systems, check out my newsletter,
 						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
 							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
 								I Don&apos;t Care About Data
