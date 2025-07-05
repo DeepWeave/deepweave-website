@@ -20,9 +20,9 @@ export default function About() {
 						About Eric Jackson
 					</h1>
 					<p className='text-stone-600 mt-5 text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
-						I am an independent community organizer, researcher, and consultant interested
-						in what we can do to create a just community where everyone can thrive. I have
-						worked for nearly 40 years in a variety of technical and executive roles in
+						I am an independent researcher, community organizer, and consultant interested
+						n how we create a just community where everyone thrives. I have
+						worked for nearly 40 years in technical and executive roles in
 						scientific research and computing, enterprise software, and, most recently,
 						municipal government and community organizing. One constant through all these
 						endeavors has been the use of data to develop insights, make decisions, and
