@@ -65,7 +65,11 @@ export default function Home() {
 									"text-stone-600 text-4xl font-bold pb-8 sm:ml-20 sm:text-5xl md:text-6xl lg:ml-40"
 								}
 							>
-								Deliver Results <br /> for Your Community
+								{/*Deliver Results <br /> for Your Community -->*/}
+								How should local organizations with the power to effect system-level change
+								through policy, programs, or investments operate within the community
+								ecosystem to most effectively improve well-being and resilience for everyone?
+
 							</div>
 							<div className='flex pt-9 pb-5 justify-end sm:pr-3'>
 								<Link
