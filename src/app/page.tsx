@@ -68,10 +68,9 @@ export default function Home() {
 								{/*Deliver Results <br /> for Your Community -->*/}
 								<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 
-									How should local organizations with the power to effect system-level
-									change through policy, programs, or investments operate within the
-									community ecosystem to most effectively improve well-being and
-									resilience for everyone?
+									How should local organizations with the power to effect system-level change<br />
+									through policy, programs, or investments operate within the community ecosystem<br />
+									to most effectively improve well-being and resilience for everyone?
 								</p>
 
 							</div>
