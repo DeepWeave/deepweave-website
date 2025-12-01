@@ -5,10 +5,10 @@ interface ServiceObject {
 	service: string;
 	mainInfo: string;
 	secondaryInfo: {
-		title: string;
+		intro: string;
 		bulletPoints: string[];
 	}[];
-	articles: {
+	resources: {
 		title: string;
 		href: string;
 		tags: string[];
@@ -22,103 +22,66 @@ interface ValuesObject {
 
 export const serviceObjects: ServiceObject[] = [
 	{
-		idAttribute: "PerformanceManagement",
-		service: "Performance Management and Reporting",
+		idAttribute: "ImpactPlanning",
+		service: "Impact Planning",
 		mainInfo:
-			"Use data to plan, track, and report on services, programs and strategies",
+			"Design iteration and learning into program design from the start.",
 		secondaryInfo: [
 			{
-				title: "Measure Performance",
+				intro: "Iteration and learning is best built into program design from the start. DeepWeave can help with:",
 				bulletPoints: [
-					"Develop metrics to track program and service operations and impact",
-					"Develop internal and external program and service performance reporting",
-				],
-			},
-			{
-				title: "Develop Program and Service Strategies",
-				bulletPoints: [
-					"Use an iterative data-driven process to design program change or development strategies",
-					"Develop an open data program that provides value to the community and to your organization",
-				],
-			},
-			{
-				title:
-					"Build Organizational Capacity for Value-Driven Data-Informed Decision Making",
-				bulletPoints: [
-					"Develop a long-term strategy to build your organization's capacity to use data to drive results",
-					"Get training in data informed decision-making and effective data governance for a team, department or an entire organization",
+					"Identifying need and relating the needs to the embedded systems",
+					"Developing theories of change",
+					"Integrating iteration and learning into programs",
+					"Designing evaluation and accountability (based on Results Based Accountability)",
 				],
 			},
 		],
-		articles: [
-			{
-				title: "Becoming a Data-Informed Organization",
-				href: "https://deepweave.substack.com/p/becoming-a-data-informed-organization",
-				tags: ["Performance", "Data-driven Decisions"],
-			},
-			{
-				title: "The 3 Commitments of a Data-Informed Organization: Part 1",
-				href: "https://deepweave.substack.com/p/3-commitments-part-1",
-				tags: ["Performance", "Data-driven Decisions"]
-			},
-			{
-				title: "What is Data-Driven Decision Making? A Case Study",
-				href: "https://www.linkedin.com/pulse/what-data-driven-decision-making-case-study-eric-jackson-nyvre/",
-				tags: ["Performance", "Data-driven Decisions"],
-			},
+		resources: [
 		],
 	},
 	{
-		idAttribute: "DataManagement",
-		service: "Data Management and Data Governance",
+		idAttribute: "Implementation",
+		service: "Implementation",
 		mainInfo:
-			"Ensure quality and prevent harm in data uses ranging from performance measurement to AI",
+			"Build simple systems to coordinate services, collect data, and report",
 		secondaryInfo: [
 			{
-				title: "Assess and Mitigate Data and AI Risks",
+				intro: "Effective delivery needs simple, well-designed systems to coordinate and track services,\
+				collect data, and manage reporting for funders and executive and board leadership.\
+				We understand that  introducing new methodologies, procedures, and systems requires a process\
+				of design and change management that honors the expertise and concerns of those directly impacted.\
+				DeepWeave can help with:",
 				bulletPoints: [
-					"Assess data quality issues and develop strategies to address them",
-					"Identify and mitigate potential privacy issues in your data uses",
-					"Identify and mitigate potentially harmful uses or unintended consequences of planned data applications",
-				],
-			},
-			{
-				title: "Develop Strategic Data Programs",
-				bulletPoints: [
-					"Develop and integrate policies, practices, procedures for strategic use of data and AI",
-					"Identify and take advantage of opportunities for automation and other technology-assisted improvements",
+					"Designing systems to coordinate and track services internally and with external partners",
+					"Planning and supporting usable data systems that can adapt to multiple reporting needs",
+					"Developing reports and processes to support iteration and learning",
+					"Managing the changes required to integrate new systems and processes",
 				],
 			},
 		],
-		articles: [
-			{
-				title: "Avoid Data Problems by Asking the Right Questions",
-				href: "https://www.linkedin.com/pulse/avoid-data-problems-asking-right-questions-eric-jackson-zlkge/",
-				tags: ["Data Governance"],
-			},
+		resources: [
 		],
 	},
 	{
-		idAttribute: "RFP",
-		service: "RFP and Grant Proposal Evaluation",
+		idAttribute: "ImpactEvaluation",
+		service: "Impact Evaluation",
 		mainInfo:
-			"Create consistent, effective selection processes that integrate your organization’s values",
+			"Evaluate the impact of your programs through metrics and narrative data",
 		secondaryInfo: [
 			{
-				title: "Create Effective Evaluation Rubrics",
+				intro: "A program and its underlying theory of change are essentially a set of hypotheses.\
+						Traditional program performance measures are inadequate for effective learning and iteration\
+						or for understanding how a program interacts with the rest of the community ecosystem – all\
+						critical to drive resilient change. DeepWeave can help with:",
 				bulletPoints: [
-					"Integrate organizational values into every aspect of your evaluation",
-					"Design evaluation rubrics that maximize consistency among evaluators",
-					"Leverage tools to automatically aggregate evaluator results",
+					"Designing evaluations to fuel learning",
+					"Implementing and integrating the Results Based Accountability methodology",
+					"Incorporating narrative data collection and analysis",
 				],
 			},
 		],
-		articles: [ 
-			{
-				title: "Coming soon ...", // Weaving Equity into Grant and Vendor Evaluations
-				href: "",
-				tags: ["Equity"], // Tags made up for the article
-			},
+		resources: [ 
 		],
 	},
 ];

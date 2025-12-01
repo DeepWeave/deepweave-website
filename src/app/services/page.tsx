@@ -37,13 +37,12 @@ export default function Services() {
 						Services
 					</h2>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
-						Consistently getting good results is hard because there is always
-						pressure to react to circumstances, rather than maintain a
-						proactive, disciplined approach. The services below will
-						help you apply simple frameworks to identify the desired
-						results and to make steady progress toward them.
+						DeepWeave offers support for nonprofits, and their funding partners, in impact planning,
+						implementation, and evaluation in service of building a resilient community.
+
 					</p>
 					{/* Blocks with services listed */}
+
 					<div
 						className='flex flex-wrap justify-center z-10'
 						id='serviceBlocks'
@@ -53,10 +52,10 @@ export default function Services() {
 								key={index}
 								className='flex flex-col drop-shadow-[0px_1px_5px_rgba(0,0,0,0.50)] mx-10 custom-transition'
 							>
-								<div className='bg-sky-700 text-yellow-400 font-semibold mt-10 py-3 pl-3 text-xl h-20 w-80'>
+								<div className='bg-sky-700 text-yellow-400 font-semibold mt-10 py-3 pl-3 text-xl h-18 w-80'>
 									{serviceObject.service}
 								</div>
-								<div className='bg-sky-tint text-white pt-3 pb-1 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
+								<div className='bg-sky-tint text-white pt-5 pb-4 pl-3 pr-3 tracking-wider h-40 w-80 flex flex-col justify-between'>
 									<div>{serviceObject.mainInfo}</div>
 									<Link href={`#${serviceObject.idAttribute}`}>
 										<div className='uppercase underline underline-offset-4 hover:text-yellow-400'>
@@ -67,32 +66,23 @@ export default function Services() {
 							</div>
 						))}
 					</div>
-					<div>
-						<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
-							For twice-monthly articles with principles and practical tips
-							for leaders and practitioners on how to use data to achieve
-							great results for your community, sign up for the&nbsp; 
-							<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
-								<span className='text-sky-700 text-xl italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
-									I Don&apos;t Care About Data
-								</span> newsletter
-							</a>.
-						</p>
-					</div>
+
 					{/* Text describing services */}
-					<div>
+					<div
+						className='flex flex-wrap justify-normal z-20'
+					>
 						{serviceObjects.map((serviceObject, index) => (
 							<div key={index} id={serviceObject.idAttribute}>
-								<div className='mt-20'>
-									<h2 className='text-stone-600 text-3xl font-semibold tracking-wider uppercase mb-7'>
+								<div className='mt-8'>
+									<p className='text-stone-600 text-3xl font-semibold tracking-wider  mb-5'>
 										{serviceObject.service}
-									</h2>
+									</p>
 									<div>
 										{serviceObject.secondaryInfo.map((info, infoIndex) => (
 											<div key={infoIndex}>
-												<h2 className='text-stone-600 text-2xl font-semibold tracking-wider mt-10'>
-													{info.title}
-												</h2>
+												<p className='text-stone-600 tracking-wider mt-5'>
+													{info.intro}
+												</p>
 												<ul className='list-disc pl-6 mt-2'>
 													{info.bulletPoints.map((bullet, bulletIndex) => (
 														<li
@@ -103,24 +93,6 @@ export default function Services() {
 														</li>
 													))}
 												</ul>
-											</div>
-										))}
-									</div>
-									<h2 className='text-sky-700 text-2xl font-semibold tracking-wider mt-5'>
-										Relevant Articles
-									</h2>
-									<div>
-										{serviceObject.articles.map((article, articleIndex) => (
-											<div key={articleIndex}>
-												{articleTitle(article.title, article.href)}
-												{/* Button for small screens to navigate back to services */}
-												<div>
-													<Link href='#serviceBlocks' className='md:hidden'>
-														<button className='bg-yellow-400 text-sky-700 font-semibold text-sm py-2 px-4 rounded-full tracking-wider custom-transition mt-7 uppercase hover:bg-yellow-500 md:py-2 md:px-8 md:text-base'>
-															Back to Top
-														</button>
-													</Link>
-												</div>
 											</div>
 										))}
 									</div>
