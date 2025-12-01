@@ -60,12 +60,13 @@ export default function Home() {
 
 					<div className='flex bg-white-opacity-70 w-full justify-center mt-40 sm:justify-start md:justify-start'>
 						<div className='flex flex-col mt-10'>
+
 							<div
 								className={
-									"text-stone-600 text-4xl font-bold pb-8 sm:ml-20 sm:text-5xl md:text-6xl lg:ml-40"
+									"text-stone-600 text-3xl ml-10 mr-10 font-bold pb-8 sm:ml-15 sm:text-3xl md:text-5xl lg:ml-15"
 								}
-							>
-								Deliver Results <br /> for Your Community
+							> 
+								We believe that the heart of resilient communities is the ability to learn and adapt.
 								{ /*
 								<p className='text-stone-600 mt-5 text-center tracking-wider w-3/4 text-xl md:text-left md:w-full'>
 
@@ -75,6 +76,15 @@ export default function Home() {
 								</p>
 								*/}
 							</div>
+							{ /*
+							<div
+								className={
+									"text-stone-600 text-4xl font-bold pb-8 sm:ml-20 sm:text-5xl md:text-6xl lg:ml-40"
+								}
+							>
+								Deliver Results <br /> for Your Community
+							</div>
+							*/ }
 							<div className='flex pt-9 pb-5 justify-end sm:pr-3'>
 								<Link
 									href="/services"
