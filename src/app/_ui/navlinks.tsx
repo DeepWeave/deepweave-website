@@ -62,7 +62,7 @@ export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksPr
 						}
 					)}
 				>
-					SERVICES
+					WHAT I DO
 				</p>
 			</Link>
 
