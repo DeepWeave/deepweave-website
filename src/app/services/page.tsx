@@ -36,7 +36,7 @@ export default function Services() {
 					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:w-full lg:text-4xl'>
 						WHAT I DD
 					</h2>
-					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
+					<p className='text-stone-600 tracking-wider mt-5'>
 						Before I moved to the government and nonprofit world, I worked as a product manager in software
 						startups that delivered cutting-edge technologies.
 					</p>
@@ -46,7 +46,7 @@ export default function Services() {
 						ensuring the final result remains true to the vision and addresses both the company’s and
 						customers’ needs.
 					</p>
-					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
+					<p className='text-stone-600 tracking-wider text-lg mt-5'>
 						Successful product managers understand the larger system and see how all its parts work together.
 						They operate in many different worlds at once, interpreting and coordinating between them. They
 						identify strategic paths through conflict and constraint and drive execution of a plan even as it
@@ -54,7 +54,7 @@ export default function Services() {
 						impact of the product for both customers and company. And they do it without formal authority
 						over anyone.
 					</p>
-					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
+					<p className='text-stone-600 tracking-wider mt-5'>
 						These days I use the same skills in service to my community, helping organizations implement
 						new tools and programs, reimagine impact, and build stronger networks to create connected,
 						resilient communities. I work both through paid engagements and as a volunteer, including
