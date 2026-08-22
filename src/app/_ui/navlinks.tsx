@@ -67,6 +67,7 @@ export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksPr
 			</Link>
 
 			{/* Values */}
+			{/*
 			<Link href='/values'>
 				<p
 					onClick={handleLinkClick}
@@ -84,6 +85,7 @@ export default function NavLinks({ handleLinkClick, isDropdownOpen }: NavLinksPr
 					VALUES
 				</p>
 			</Link>
+			*/}
 
 			{/* About */}
 			<Link href='/about'>
