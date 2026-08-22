@@ -34,13 +34,13 @@ export default function Services() {
 			<div className='container flex justify-center items-center h-full px-10 mb-10'>
 				<div className='flex flex-col justify-center items-center mt-10 md:mt-40'>
 					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:w-full lg:text-4xl'>
-						WHAT I DD
+						WHAT I DO
 					</h2>
-					<p className='text-stone-600 tracking-wider mt-5 text-center'>
+					<p className='text-stone-600 tracking-widertext-base mt-5'>
 						Before I moved to the government and nonprofit world, I worked as a product manager in software
 						startups that delivered cutting-edge technologies.
 					</p>
-					<p className='text-stone-600 tracking-wider mt-5 text-center'>
+					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Startup product managers don&apos;t design, build, market, or sell the product, nor do they have
 						authority over those who do. Their role is to shepherd the product from vision to delivery,
 						ensuring the final result remains true to the vision and addresses both the company’s and
@@ -54,7 +54,7 @@ export default function Services() {
 						impact of the product for both customers and company. And they do it without formal authority
 						over anyone.
 					</p>
-					<p className='text-stone-600 tracking-wider mt-5'>
+					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						These days I use the same skills in service to my community, helping organizations implement
 						new tools and programs, reimagine impact, and build stronger networks to create connected,
 						resilient communities. I work both through paid engagements and as a volunteer, including
@@ -67,9 +67,9 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-					<p className='text-stone-600 text-3xl font-semibold tracking-wider  mb-5'>
+					<h3 className='text-stone-600 text-xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:w-full lg:text-4xl'>
 						Some Ways I Can Help
-					</p>
+					</h3>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 						Community organizations don&apos;t usually have product managers, but their work can require similar
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
