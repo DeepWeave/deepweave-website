@@ -33,11 +33,10 @@ export default function Services() {
 		<>
 			<div className='container flex justify-center items-center h-full px-10 mb-10'>
 				<div className='flex flex-col justify-center items-center mt-10 md:mt-40'>
-					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:w-full lg:text-4xl'>
+					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-left mt-3 md:text-left md:w-full lg:text-4xl'>
 						WHAT I DO
 					</h2>
-					<p></p>
-					<p className='text-stone-600 tracking-widertext-base mt-5'>
+					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Before I moved to the government and nonprofit world, I worked as a product manager in software
 						startups that delivered cutting-edge technologies.
 					</p>
