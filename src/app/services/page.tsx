@@ -64,7 +64,7 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-					<p className='text-stone-600 text-3xl font-semibold tracking-wider  mb-5'>
+					<p className='text-stone-600 text-xl font-semibold tracking-wider text-left mb-5'>
 						Some Ways I Can Help
 					</p>
 					<p className='text-stone-600 mt-5 tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
@@ -72,9 +72,6 @@ export default function Services() {
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
 						figuring out what does or doesn&apos;t help them fulfill their mission. Here are a few ways
 						I&apos;ve helped with those challenges:
-					</p>
-					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
-
 					</p>
 
 					{/* Text describing services */}
