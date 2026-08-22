@@ -41,7 +41,7 @@ export default function Services() {
 						startups that delivered cutting-edge technologies.
 					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
-						Startup product managers don't design, build, market, or sell the product, nor do they have
+						Startup product managers don&apos;t design, build, market, or sell the product, nor do they have
 						authority over those who do. Their role is to shepherd the product from vision to delivery,
 						ensuring the final result remains true to the vision and addresses both the company’s and
 						customers’ needs.
