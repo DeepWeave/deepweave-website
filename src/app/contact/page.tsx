@@ -5,7 +5,7 @@ import React from "react";
 export default function Contact() {
 	return (
 		<div className='bg-sky-bg flex justify-center items-center m-0 h-full pb-10'>
-			<div className='flex flex-col justify-center items-center mt-10 md:mt-40'>
+			<div className='flex flex-col justify-center items-center mt-10 md:mt-20'>
 				<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-center md:ml-12 md:text-left md:w-full lg:text-4xl'>
 					Contact
 				</h2>

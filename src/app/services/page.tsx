@@ -32,7 +32,7 @@ export default function Services() {
 	return (
 		<>
 			<div className='container flex justify-center items-center h-full px-10 mb-10'>
-				<div className='flex flex-col justify-center items-center mt-10 md:mt-40'>
+				<div className='flex flex-col justify-center items-center mt-10 md:mt-20'>
 					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-left mt-3 md:text-left md:w-full lg:text-4xl'>
 						WHAT I DO
 					</h2>
