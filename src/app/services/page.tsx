@@ -58,16 +58,16 @@ export default function Services() {
 						chairing the System Performance Committee of the
 						<a href="https://www.ashevillenc.gov/projects/asheville-buncombe-continuum-of-care/"
 						   target="_blank">Asheville-Buncombe Continuum of Care</a> for homelessness. In my free time,
-						I think and write about building resilient and just systems in my newsletter,
+						I think and write about building resilient and just systems in my newsletter,&nbsp;
 						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
 							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
 								Resilient Change
 							</span>
 						</a>.
 					</p>
-					<p className='text-stone-600 text-xl font-semibold tracking-wider text-left mb-5'>
+					<h3 className='text-stone-600 text-xl font-semibold tracking-wider text-left mt-3 md:text-left md:w-full lg:text-4xl'>
 						Some Ways I Can Help
-					</p>
+					</h3>
 					<p className='text-stone-600 mt-5 tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 						Community organizations don&apos;t usually have product managers, but their work can require similar
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
