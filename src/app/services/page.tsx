@@ -65,9 +65,9 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-					<h2 className='text-stone-600 font-semibold tracking-wider text-left mt-5 md:text-left md:w-full lg:text-4xl'>
+					<h3 className='text-stone-600 font-semibold tracking-wider text-left mt-5 md:text-left md:w-full lg:text-4xl'>
 						Some Ways I Can Help
-					</h2>
+					</h3>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Community organizations don&apos;t usually have product managers, but their work can require similar
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
@@ -82,7 +82,7 @@ export default function Services() {
 						{serviceObjects.map((serviceObject, index) => (
 							<div key={index} id={serviceObject.idAttribute}>
 								<div className='mt-8'>
-									<p className='text-stone-600 text-3xl font-semibold tracking-wider  mb-5'>
+									<p className='text-stone-600 text-xl font-semibold tracking-wider  mb-5'>
 										{serviceObject.service}
 									</p>
 									<div>
