@@ -39,12 +39,12 @@ export default function Services() {
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Before I moved to the government and nonprofit world, I worked as a product manager in software
 						startups that delivered cutting-edge technologies. Startup product managers don&apos;t design,
-						build, market, or sell the product, nor do they have authority over those who do. Their role is
+						build, market, or sell the product, or have authority over those who do. Their role is
 						to shepherd the product from vision to delivery, ensuring the final result remains true to the
 						vision and addresses both the company&apos;s and customers&apos; needs.
 					</p>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
-						Successful product managers understand the larger system and see how all its parts work together.
+						Successful product managers understand the larger system and see how its parts work together.
 						They operate in many different worlds at once, interpreting and coordinating between them. They
 						identify strategic paths through conflict and constraint and drive execution of a plan even as it
 						evolves in response to shifting conditions and learning. They assess and convey the value and
