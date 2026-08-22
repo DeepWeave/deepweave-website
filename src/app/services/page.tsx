@@ -65,9 +65,9 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-					<h3 className='text-stone-600 font-semibold tracking-wider text-left mt-5 md:text-left md:w-full'>
+					<p className='text-stone-600 text-2xl font-semibold tracking-wider  mb-5'>
 						Some Ways I Can Help
-					</h3>
+					</p>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Community organizations don&apos;t usually have product managers, but their work can require similar
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
