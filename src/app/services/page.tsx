@@ -36,11 +36,11 @@ export default function Services() {
 					<h2 className='text-stone-600 text-3xl font-semibold uppercase tracking-wider text-center mt-3 md:text-left md:w-full lg:text-4xl'>
 						WHAT I DD
 					</h2>
-					<p className='text-stone-600 tracking-wider mt-5'>
+					<p className='text-stone-600 tracking-wider mt-5 text-center'>
 						Before I moved to the government and nonprofit world, I worked as a product manager in software
 						startups that delivered cutting-edge technologies.
 					</p>
-					<p className='text-stone-600 tracking-wider mt-5'>
+					<p className='text-stone-600 tracking-wider mt-5 text-center'>
 						Startup product managers don&apos;t design, build, market, or sell the product, nor do they have
 						authority over those who do. Their role is to shepherd the product from vision to delivery,
 						ensuring the final result remains true to the vision and addresses both the company’s and
@@ -71,10 +71,10 @@ export default function Services() {
 						Some Ways I Can Help
 					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
-						Community organizations don&npos;t usually have product managers, but their work can require similar
+						Community organizations don&apos;t usually have product managers, but their work can require similar
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
-						figuring out what does or doesn&npos;t help them fulfill their mission. Here are a few ways
-						I&npos;ve helped with those challenges:
+						figuring out what does or doesn&apos;t help them fulfill their mission. Here are a few ways
+						I&apos;ve helped with those challenges:
 					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 
