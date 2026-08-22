@@ -66,7 +66,7 @@ export default function Services() {
 						</a>.
 					</p>
 					<h3 className='text-stone-600 font-semibold tracking-wider text-2xl text-left mt-5 md:text-left md:w-full'>
-						Some Ways I Can Help
+						How I Can Help
 					</h3>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Community organizations don&apos;t usually have product managers, but their work can require similar

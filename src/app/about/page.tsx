@@ -7,7 +7,7 @@ import LinkedLogo_hover from "../_ui/linkedLogo_hover";
 export default function About() {
 	return (
 		<div className='container flex justify-center items-center h-full sm:px-10rem'>
-			<div className='flex flex-col justify-center items-center mt-10 md:mt-40 md:flex-row md:pl-5 md:mr-5'>
+			<div className='flex flex-col justify-center items-center mt-10 md:mt-20 md:flex-row md:pl-5 md:mr-5'>
 				<Image
 					src='/Profile_image.jpg'
 					width={270}
