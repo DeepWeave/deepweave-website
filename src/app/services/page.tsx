@@ -40,7 +40,7 @@ export default function Services() {
 						Before I moved to the government and nonprofit world, I worked as a product manager in software
 						startups that delivered cutting-edge technologies.
 					</p>
-					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
+					<p className='text-stone-600 tracking-wider mt-5'></p>					
 						Startup product managers don&apos;t design, build, market, or sell the product, nor do they have
 						authority over those who do. Their role is to shepherd the product from vision to delivery,
 						ensuring the final result remains true to the vision and addresses both the company’s and
