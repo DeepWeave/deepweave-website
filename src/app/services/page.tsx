@@ -65,49 +65,24 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-					<p className='text-stone-600 text-2xl font-semibold tracking-wider  mb-5'>
+					<h3 className='text-stone-600 font-semibold tracking-wider text-2xl text-left mt-5 md:text-left md:w-full'>
 						Some Ways I Can Help
-					</p>
+					</h3>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Community organizations don&apos;t usually have product managers, but their work can require similar
 						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
 						figuring out what does or doesn&apos;t help them fulfill their mission. Here are a few ways
 						I&apos;ve helped with those challenges:
 					</p>
+					<ul className='list-disc pl-6 mt-2'>
+						<li className='text-stone-600 mt-1'>
+							<em>Creating systems for evaluation, reporting, & learning.</em> Simple counts of people served
+							or supplies provided are important, but don’t tell you how people and the community were
+							impacted or how changes in process might improve the results. Organizations often could
+							gain that information, but lack the systems and processes to do so.
+						</li>
+					</ul>
 
-					{/* Text describing services */}
-					<div
-						className='flex flex-wrap justify-normal z-20'
-					>
-						{serviceObjects.map((serviceObject, index) => (
-							<div key={index} id={serviceObject.idAttribute}>
-								<div className='mt-8'>
-									<p className='text-stone-600 text-xl font-semibold tracking-wider  mb-5'>
-										{serviceObject.service}
-									</p>
-									<div>
-										{serviceObject.secondaryInfo.map((info, infoIndex) => (
-											<div key={infoIndex}>
-												<p className='text-stone-600 tracking-wider mt-5'>
-													{info.intro}
-												</p>
-												<ul className='list-disc pl-6 mt-2'>
-													{info.bulletPoints.map((bullet, bulletIndex) => (
-														<li
-															key={bulletIndex}
-															className='text-stone-600 mt-1'
-														>
-															{bullet}
-														</li>
-													))}
-												</ul>
-											</div>
-										))}
-									</div>
-								</div>
-							</div>
-						))}
-					</div>
 				</div>
 			</div>
 		</>
