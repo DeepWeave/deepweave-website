@@ -66,7 +66,7 @@ export default function Home() {
 									"text-stone-600 text-3xl ml-10 mr-10 font-bold pb-8 sm:ml-15 sm:text-3xl md:text-5xl lg:ml-15"
 								}
 							> 
-								We believe that the heart of resilient communities is the ability to learn and adapt.
+								Helping organizations help communities flourish.
 								{ /*
 								<p className='text-stone-600 mt-5 text-center tracking-wider w-3/4 text-xl md:text-left md:w-full'>
 
