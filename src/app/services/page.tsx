@@ -56,14 +56,17 @@ export default function Services() {
 						new tools and programs, reimagine impact, and build stronger networks to create connected,
 						resilient communities. I work both through paid engagements and as a volunteer, including
 						chairing the System Performance Committee of the
-						<a href="https://www.ashevillenc.gov/projects/asheville-buncombe-continuum-of-care/" target="_blank">Asheville-Buncombe Continuum of Care</a> for
-						homelessness. In my free time, I think and write about building resilient and just systems
-						in my newsletter, <a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
+						<a href="https://www.ashevillenc.gov/projects/asheville-buncombe-continuum-of-care/"
+						   target="_blank">Asheville-Buncombe Continuum of Care</a> for homelessness. In my free time,
+						I think and write about building resilient and just systems in my newsletter,
+						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
 							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
 								Resilient Change
 							</span>
 						</a>.
 					</p>
+				</div>
+				<div className='flex flex-wrap justify-normal z-20' >
 					<p className='text-stone-600 text-xl font-semibold tracking-wider text-left mb-5'>
 						Some Ways I Can Help
 					</p>
