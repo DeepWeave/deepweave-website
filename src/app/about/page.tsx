@@ -29,7 +29,7 @@ export default function About() {
 					</p>
 					<p className='text-stone-600 mt-5 italic text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
 						For regular reflections, stories, observations, and explorations of others’
-						wisdom about building resilient and just systems, check out my newsletter,%20 
+						wisdom about building resilient and just systems, check out my newsletter,&nbsp;
 						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
 							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
 								Resilient Change
