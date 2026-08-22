@@ -65,8 +65,6 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-				</div>
-				<div className='flex flex-wrap justify-normal z-20' >
 					<p className='text-stone-600 text-xl font-semibold tracking-wider text-left mb-5'>
 						Some Ways I Can Help
 					</p>
