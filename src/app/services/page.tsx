@@ -65,7 +65,7 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
-					<h3 className='text-stone-600 font-semibold tracking-wider text-left mt-5 md:text-left md:w-full lg:text-4xl'>
+					<h3 className='text-stone-600 font-semibold tracking-wider text-left mt-5 md:text-left md:w-full'>
 						Some Ways I Can Help
 					</h3>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
