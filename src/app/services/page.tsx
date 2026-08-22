@@ -46,7 +46,7 @@ export default function Services() {
 						ensuring the final result remains true to the vision and addresses both the company’s and
 						customers’ needs.
 					</p>
-					<p className='text-stone-600 tracking-wider text-lg mt-5'>
+					<p className='text-stone-600 tracking-wider text-base mt-5'>
 						Successful product managers understand the larger system and see how all its parts work together.
 						They operate in many different worlds at once, interpreting and coordinating between them. They
 						identify strategic paths through conflict and constraint and drive execution of a plan even as it
@@ -67,8 +67,14 @@ export default function Services() {
 							</span>
 						</a>.
 					</p>
+					<p className='text-stone-600 text-3xl font-semibold tracking-wider  mb-5'>
+						Some Ways I Can Help
+					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
-
+						Community organizations don&npos;t usually have product managers, but their work can require similar
+						skills. In a way they are like perpetual startups, constantly seeking funding and scrappily
+						figuring out what does or doesn&npos;t help them fulfill their mission. Here are a few ways
+						I&npos;ve helped with those challenges:
 					</p>
 					<p className='text-stone-600 mt-5 text-center tracking-wider italic w-3/4 text-xl md:text-left md:w-full'>
 
