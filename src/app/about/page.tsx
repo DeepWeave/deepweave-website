@@ -32,8 +32,8 @@ export default function About() {
 						wisdom about building resilient and just systems, check out my newsletter,
 						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
 							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
-								I Don&apos;t Care About Data
-							</span> newsletter
+								Resilient Change
+							</span>
 						</a>.
 					</p>
 
