@@ -58,7 +58,7 @@ export default function Home() {
 						/>
 					</div>
 
-					<div className='flex bg-white-opacity-70 w-full justify-center mt-20 sm:justify-start md:justify-start'>
+					<div className='flex bg-white-opacity-70 w-full justify-center mt-40 sm:justify-start md:justify-start'>
 						<div className='flex flex-col mt-10'>
 
 							<div
@@ -68,16 +68,7 @@ export default function Home() {
 							> 
 								Helping organizations help communities flourish.
 							</div>
-							{ /*
-							<div
-								className={
-									"text-stone-600 text-4xl font-bold pb-8 sm:ml-20 sm:text-5xl md:text-6xl lg:ml-40"
-								}
-							>
-								Deliver Results <br /> for Your Community
-							</div>
-							*/ }
-							<div className='flex pt-9 pb-5 justify-end sm:pr-3'>
+							<div className='flex pt-4 pb-5 justify-end sm:pr-3'>
 								<Link
 									href="/services"
 								>
