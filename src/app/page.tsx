@@ -58,7 +58,7 @@ export default function Home() {
 						/>
 					</div>
 
-					<div className='flex bg-white-opacity-70 w-full justify-center mt-40 sm:justify-start md:justify-start'>
+					<div className='flex bg-white-opacity-70 w-full justify-center mt-20 sm:justify-start md:justify-start'>
 						<div className='flex flex-col mt-10'>
 
 							<div
@@ -67,14 +67,6 @@ export default function Home() {
 								}
 							> 
 								Helping organizations help communities flourish.
-								{ /*
-								<p className='text-stone-600 mt-5 text-center tracking-wider w-3/4 text-xl md:text-left md:w-full'>
-
-									How should local organizations with the power to effect system-level change<br />
-									through policy, programs, or investments operate within the community ecosystem<br />
-									to most effectively improve well-being and resilience for everyone?
-								</p>
-								*/}
 							</div>
 							{ /*
 							<div
