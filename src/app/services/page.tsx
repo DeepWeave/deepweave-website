@@ -55,9 +55,10 @@ export default function Services() {
 						These days I use the same skills in service to my community, helping organizations implement
 						new tools and programs, reimagine impact, and build stronger networks to create connected,
 						resilient communities. I work both through paid engagements and as a volunteer, including
-						chairing the System Performance Committee of the
-						<a href="https://www.ashevillenc.gov/projects/asheville-buncombe-continuum-of-care/"
-						   target="_blank">Asheville-Buncombe Continuum of Care</a> for homelessness. In my free time,
+						chairing the System Performance Committee of the&nbsp;
+						<a href="https://www.ashevillenc.gov/projects/asheville-buncombe-continuum-of-care/" target="_blank"
+						   className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
+							Asheville-Buncombe Continuum of Care</a> for homelessness. In my free time,
 						I think and write about building resilient and just systems in my newsletter,&nbsp;
 						<a href="https://deepweave.substack.com/" target="_blank" rel='noopener noreferrer'>
 							<span className='text-sky-700 italic font-semibold tracking-wider underline underline-offset-2 mt-3 hover:text-sky-800'>
