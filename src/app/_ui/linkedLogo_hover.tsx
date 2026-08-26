@@ -31,7 +31,7 @@ export default function LinkedLogo_hover() {
 					/>
 				)}
 				<p className='text-sky-700 italic font-semibold tracking-wider ml-2 hover:text-sky-800'>
-					See LinkedIn
+					See my LinkedIn profile
 				</p>
 			</div>
 		</Link>
