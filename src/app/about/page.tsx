@@ -27,6 +27,12 @@ export default function About() {
 						 community organizing. One constant throughout has been the use of data to
 						 develop insights, make decisions, and support accountability.
 					</p>
+					<p className='text-stone-600 mt-5 text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
+						One of my foundational beliefs is that everything we do has consequences for society and its
+						systems: we are either helping to maintain the status quo or we are nudging systems in some
+						direction. I try to be deliberate about that in my work, always looking for ways to accomplish
+						the task at hand that also disrupt unjust systems and lay foundations for just ones.
+					</p>
 					<p className='text-stone-600 mt-5 italic text-center tracking-wider px-20 md:text-left md:px-0 md:w-full'>
 						For regular reflections, stories, observations, and explorations of others’
 						wisdom about building resilient and just systems, check out my newsletter,&nbsp;
