@@ -83,16 +83,28 @@ export default function Services() {
 							gain that information, but lack the systems and processes to do so.
 						</li>
 						<li className='text-stone-600 mt-1'>
-							<b>Implementing a strategic plan.</b> Strategic planning often yields a valuable plan that then gathers metaphorical dust in a folder somewhere. Implementation requires identifying ways to integrate changes into day-to-day activities that can actually lead to the desired new state.
+							<b>Collaborating with other organizations.</b> Collaborative ventures frequently struggle to
+							realize their potential value, even when everyone is bought in. From differing incentives and
+							cultures to incompatible technologies, successful implementation faces a range of challenges
+							and always requires an effective framework for collaboration and an iterative collective learning process.
 						</li>
 						<li className='text-stone-600 mt-1'>
-							<b>Collaborating with other organizations.</b> Collaborative ventures frequently struggle to realize their potential value, even when everyone is bought in. From differing incentives and cultures to incompatible technologies, successful implementation faces a range of challenges and always requires an iterative collective learning process.
+							<b>Implementing a strategic plan.</b> Strategic planning often yields a valuable plan that
+							then gathers metaphorical dust in a folder somewhere. Implementation requires identifying
+							ways to integrate changes into day-to-day activities that can actually lead to the desired
+							new state.
 						</li>
 						<li className='text-stone-600 mt-1'>
-							<b>Purchasing & implementing new software systems.</b> Identifying and implementing a new donor, case management, financial, or other system not only requires gathering and balancing requirements across multiple stakeholders, it also requires careful thought about how people, process, technology, and data play into a successful implementation.
+							<b>Purchasing & implementing new software systems.</b> Identifying and implementing a new
+							donor, case management, financial, or other system not only requires gathering and balancing
+							requirements across multiple stakeholders, it also requires careful thought about how people,
+							process, technology, and data play into a successful implementation.
 						</li>
 						<li className='text-stone-600 mt-1'>
-							<b>Managing complex and high-risk projects.</b> Many projects and new programs are similar enough to what has been done before that they just need a skilled project manager. But projects with significant uncertainty call for strategic skills to assess connections to the larger system and build learning into the process.
+							<b>Managing complex and high-risk projects.</b> Many projects and new programs are similar
+							enough to what has been done before that they just need a skilled project manager. But
+							projects with significant uncertainty call for strategic skills to assess connections to
+							the larger system and build learning into the process.
 						</li>
 					</ul>
 				</div>
