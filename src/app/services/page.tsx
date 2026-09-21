@@ -106,7 +106,7 @@ export default function Services() {
 							projects with significant uncertainty call for strategic skills to assess connections to
 							the larger system and build learning into the process.
 						</li>
-
+					</ul>
 					<h3 className='text-stone-600 font-semibold tracking-wider text-2xl text-left mt-5 md:text-left md:w-full'>
 						My Toolbox
 					</h3>
@@ -130,7 +130,7 @@ export default function Services() {
 							extensive experience with data management and data governance issues and approaches.
 						</li>
 						<li className='text-stone-600 mt-1'>
-							<b>IT security and govenrance.</b> While I do not consider myself a security specialist,
+							<b>IT security and governance.</b> While I do not consider myself a security specialist,
 							I have significant experience in IT management with a focus on security and governance.
 						</li>
 					</ul>
