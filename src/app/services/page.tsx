@@ -111,9 +111,9 @@ export default function Services() {
 						My Toolbox
 					</h3>
 					<p className='text-stone-600 tracking-wider text-base mt-5'>
-						I believe that the importance of process skills – leadership, facilitation, general management,
-						and project management – outweighs that of technical skills in project success. Nevertheless,
-						my data and technology skills are often important for projects. Key tools in my toolbox include:
+						Process skills like leadership, facilitation, general management, and project management are
+						foundational for project success, however, my data and technology skills are important as well.
+						Key tools in my technical toolbox include:
 					</p>
 					<ul className='list-disc pl-6 mt-2'>
 						<li className='text-stone-600 mt-1'>
