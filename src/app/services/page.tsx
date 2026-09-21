@@ -106,6 +106,33 @@ export default function Services() {
 							projects with significant uncertainty call for strategic skills to assess connections to
 							the larger system and build learning into the process.
 						</li>
+
+					<h3 className='text-stone-600 font-semibold tracking-wider text-2xl text-left mt-5 md:text-left md:w-full'>
+						My Toolbox
+					</h3>
+					<p className='text-stone-600 tracking-wider text-base mt-5'>
+						I believe that the importance of process skills – leadership, facilitation, general management,
+						and project management – outweighs that of technical skills in project success. Nevertheless,
+						my data and technology skills are often important for projects. Key tools in my toolbox include:
+					</p>
+					<ul className='list-disc pl-6 mt-2'>
+						<li className='text-stone-600 mt-1'>
+							<b>Software development.</b> I have designed, implemented, and managed software systems in
+							a wide variety of languages and environments. Languages and frameworks: Javascript, Node,
+							React, Python, Google Apps Script. Environments: Amazon Web Services, Heroku, Linux, MacOS,
+							Windows. Databases: PostgreSQL, SQL Server, MySQL. These are all technologies that I have
+							used in the last few years; my career has included many more, and I can pick up new
+							environments and languages as needed.
+						</li>
+						<li className='text-stone-600 mt-1'>
+							<b>Data analysis and management.</b> I regularly use Excel and Google Sheets and have
+							experience with both Python and R for data analysis and visualization. I also have
+							extensive experience with data management and data governance issues and approaches.
+						</li>
+						<li className='text-stone-600 mt-1'>
+							<b>IT security and govenrance.</b> While I do not consider myself a security specialist,
+							I have significant experience in IT management with a focus on security and governance.
+						</li>
 					</ul>
 				</div>
 			</div>
