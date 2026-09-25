@@ -128,7 +128,7 @@ export default function Services() {
 						<li className='text-stone-600 mt-1'>
 							<b>Software development.</b> I have designed, implemented, and managed software systems in
 							a wide variety of languages and environments. Languages and frameworks: Javascript, Node,
-							React, Python, SQL, Google Apps Script. Environments: Amazon Web Services, Heroku, Linux, MacOS,
+							React, Python, SQL, Google Apps Script, Java, C#, C. Environments: Amazon Web Services, Heroku, Linux, MacOS,
 							Windows. Databases: PostgreSQL, SQL Server, MySQL. These are all technologies that I have
 							used in the last few years; my career has included many more, and I can pick up new
 							environments and languages as needed.
